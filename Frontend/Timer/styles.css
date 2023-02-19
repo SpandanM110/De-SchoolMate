@@ -1,0 +1,102 @@
+body {
+    font-family: 'Play', sans-serif;
+    background: url('https://images.unsplash.com/photo-1568191009535-7d8b407d389a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGFlc3RoZXRpYyUyMHN0dWR5JTIwY2FydG9vbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000000;
+    /* color: #570c0c; */
+}
+
+.container {
+    width: 80%;
+    max-width: 500px;
+    min-width: 250px;
+    margin: 20px auto;
+}
+
+h1 {
+    margin-top: 20%;
+    text-align: center;
+    color: #CCC;
+}
+
+.row {
+    overflow: hidden;
+}
+
+.col-half {
+    width: 50%;
+    float: left;
+}
+
+.knob-wrapper {
+    text-align: center;
+}
+
+
+/* button styles */
+
+.buttons {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.buttons-mute {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.btn {
+    display: inline-block;
+    width: 80px;
+    margin: 4px;
+    padding: 6px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-green {
+    color: rgb(22, 71, 22);
+    border: 2px solid rgb(28, 94, 28);
+}
+
+.btn-green:hover {
+    background-color: rgb(107, 165, 107);
+}
+
+.btn-yellow {
+    color: #CC6;
+    border: 2px solid #CC6;
+}
+
+.btn-yellow:hover {
+    background-color: #332;
+}
+
+.btn-red {
+    color: rgb(122, 32, 32);
+    border: 2px solid rgb(112, 38, 38);
+}
+
+.btn-red:hover {
+    background-color: rgb(124, 83, 83);
+}
+
+.btn-mute {
+    width: 20px;
+    margin: 4px;
+    padding: 2px;
+    color: #231a1a;
+    font-size: 16px;
+}
+
+.btn-mute:hover {
+    color: #5a4848;
+}
+
+
+/* global override styles */
+
+.hidden {
+    display: none;
+}
