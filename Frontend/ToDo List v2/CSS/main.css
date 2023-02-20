@@ -16,7 +16,7 @@ body {
 
 /* Body light or darker themes */
 .standard {
-    background-image: linear-gradient(100deg, #575656, #062e3f);
+    background-image: linear-gradient(100deg, #604166, blueviolet);
     color: #ffdfdb;
     transition: 0.3s linear;
     overflow: hidden;
@@ -80,7 +80,7 @@ body {
 }
 
 .standard-theme {
-    background-image: linear-gradient(100deg, #575656, #0c2631);
+    background-image: linear-gradient(100deg, #604166, blueviolet);
 }
 
 .light-theme {
@@ -105,8 +105,8 @@ body {
 .text {
     color: #5b97b3;
     border-right: 2px solid #33444C;
-    font-size: 55px;
-    font-weight: 220;
+    font-size: 40px;
+    font-weight: 400;
 }
 
 

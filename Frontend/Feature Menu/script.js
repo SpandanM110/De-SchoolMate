@@ -1,4 +1,4 @@
-function logout(){
+function logout() {
     window.open("../Landing Page/index.html");
 }
 
@@ -11,5 +11,13 @@ function timer() {
 }
 
 function todolist() {
-    window.open("../To-Do List/index.html");
+    window.open("../ToDo List v2/index.html");
+}
+
+function tutorial() {
+    window.open("../Tutorial Search/index.html");
+}
+
+function books() {
+    window.open("../book search/index.html");
 }
