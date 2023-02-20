@@ -21,3 +21,7 @@ function tutorial() {
 function books() {
     window.open("../book search/index.html");
 }
+
+function calender() {
+    window.open("../Calender/index.html");
+}
