@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&family=Roboto:ital,wght@0,300;0,400;1,100&display=swap');
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #303633;
+    background-color: #C8D9E7;
+    overflow: hidden;
+    position: relative;
+    outline: none;
+    perspective: 1000px;
+}
+
+.content-wrapper {
+    position: absolute;
+    width: 730px;
+    height: 420px;
+    top: 50%;
+    left: 50%;
+    box-sizing: border-box;
+    transform: translate(-50%, -50%);
+    transition: all 0.195s ease;
+    transform-style: preserve-3d;
+}
+
+.content-wrapper.is-rotated-left {
+    transform: translate(-50%, -50%) rotateY(-4deg);
+}
+
+.content-wrapper.is-rotated-right {
+    transform: translate(-50%, -50%) rotateY(4deg);
+}
+
+.content-wrapper .left-wrapper,
+.content-wrapper .right-wrapper {
+    background-color: white;
+    width: 50%;
+    float: left;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.content-wrapper .header {
+    padding: 15px 0 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.content-wrapper .header i {
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.content-wrapper .header span {
+    display: inline-block;
+    margin: 0 3px;
+    font-weight: 700;
+}
+
+.content-wrapper .right-wrapper {
+    background-color: #48A9A6;
+    color: white;
+    transform-origin: left center;
+    transform: rotateY(110deg);
+    transition: all 0.5s;
+}
+
+.content-wrapper .right-wrapper.is-active {
+    transform: rotateY(0deg);
+}
+
+.content-wrapper .right-wrapper .header {
+    text-align: left;
+    justify-content: center;
+}
+
+.content-wrapper .right-wrapper .day {
+    font-size: 12em;
+    text-indent: -12px;
+    display: block;
+}
+
+.content-wrapper .right-wrapper .month {
+    font-size: 2.5em;
+}
+
+.content-wrapper .left-wrapper .showDate {
+    color: white;
+    text-align: right;
+    width: 100%;
+}
+
+.content-wrapper .left-wrapper .showDate i {
+    cursor: pointer;
+    background: #48A9A6;
+    border-radius: 4px;
+    padding: 8px 12px;
+    transform: scale(1);
+    transition: all 0.3s;
+}
+
+.content-wrapper .left-wrapper .showDate i.is-active {
+    transform: scale(-1);
+}
+
+.content-wrapper .left-wrapper table {
+    text-align: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+    width: 90%;
+    margin: 30px auto 0;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+.content-wrapper .left-wrapper table tbody:before {
+    content: "-";
+    display: block;
+    line-height: 0.75em;
+    color: transparent;
+}
+
+.content-wrapper .left-wrapper table th {
+    color: #48A9A6;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.content-wrapper .left-wrapper table td {
+    padding: 11px 5px;
+    color: #ced0ce;
+    font-size: 0.75em;
+    transition: all 0.3s;
+    position: relative;
+}
+
+.content-wrapper .left-wrapper table td::before {
+    content: "";
+    display: none;
+    width: 50%;
+    height: 2px;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -8px);
+    background-color: #48A9A6;
+}
+
+.content-wrapper .left-wrapper table td.currentDay::before {
+    display: block;
+}
+
+.content-wrapper .left-wrapper table td.selectable {
+    color: #303633;
+    cursor: pointer;
+}
+
+.content-wrapper .left-wrapper table td.selectable:hover {
+    background: #48A9A6;
+    color: white;
+}
+
+.content-wrapper .left-wrapper table td.between {
+    background: rgba(72, 169, 166, 0.65);
+    color: white;
+}
+
+.content-wrapper .left-wrapper table td.active,
+.content-wrapper .left-wrapper table td.hover {
+    background: #48A9A6;
+    color: white;
+}
