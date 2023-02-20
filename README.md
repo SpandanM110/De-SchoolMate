@@ -1,4 +1,4 @@
-# De-SchoolMate
+# De SchoolMate
 ![image](https://user-images.githubusercontent.com/95229740/220142233-f9d98419-d3a0-446f-9ab0-b75ab6c48711.png)
 
 # About our project
