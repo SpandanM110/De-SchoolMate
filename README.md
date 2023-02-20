@@ -7,7 +7,7 @@ Our website is a powerful productivity and organization tool designed with stude
 Our website is equipped with a variety of features such as calendars, goal setting and task prioritization tools to help students plan their study schedules efficiently and effectively. In addition, we offer a comprehensive library of educational resources, including online courses, tutorial videos, and study guides, designed to help students achieve their academic goals and excel in their studies. 
 
 # Deployed Website
-https://de-school-mate-tau.vercel.app/
+https://de-school-mate.vercel.app/
 
 # Tech Stack Used
 Design - Figma
