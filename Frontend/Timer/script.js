@@ -172,5 +172,5 @@ $(document).ready(function () {
     if (!$('#snd-endofbreak')[0].play) {
         mute = true;
         $('#cmd-mute').addClass('hidden');
-    }
+    }
 });

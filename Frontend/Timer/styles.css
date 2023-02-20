@@ -1,9 +1,6 @@
 body {
     font-family: 'Play', sans-serif;
-    background: url('https://images.unsplash.com/photo-1568191009535-7d8b407d389a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGFlc3RoZXRpYyUyMHN0dWR5JTIwY2FydG9vbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=900&q=60');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #000000;
+    background: linear-gradient(90deg, #ab5ee3 0%, #9279a4 49%, #ab5ee3 100%);
     /* color: #570c0c; */
 }
 
@@ -17,7 +14,7 @@ body {
 h1 {
     margin-top: 20%;
     text-align: center;
-    color: #CCC;
+    color: #6a019a;
 }
 
 .row {
@@ -58,6 +55,7 @@ h1 {
 .btn-green {
     color: rgb(22, 71, 22);
     border: 2px solid rgb(28, 94, 28);
+    border-radius: 25px;
 }
 
 .btn-green:hover {
@@ -65,21 +63,23 @@ h1 {
 }
 
 .btn-yellow {
-    color: #CC6;
-    border: 2px solid #CC6;
+    color: rgb(255, 255, 19);
+    border: 2px solid rgb(255, 255, 19);
+    border-radius: 25px;
 }
 
 .btn-yellow:hover {
-    background-color: #332;
+    background-color: rgb(158, 158, 12);
 }
 
 .btn-red {
-    color: rgb(122, 32, 32);
-    border: 2px solid rgb(112, 38, 38);
+    color: black;
+    border: 2px solid black;
+    border-radius: 25px;
 }
 
 .btn-red:hover {
-    background-color: rgb(124, 83, 83);
+    background-color: rgb(139, 136, 136);
 }
 
 .btn-mute {
@@ -98,5 +98,5 @@ h1 {
 /* global override styles */
 
 .hidden {
-    display: none;
+    display: none;
 }

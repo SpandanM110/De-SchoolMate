@@ -126,3 +126,27 @@ body::-webkit-scrollbar{
         text-align: center;
     }
 }
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5% 10%;
+    background-color: #AB77D0;
+}
+.footer p{
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@media screen and (max-width: 500px){
+    .footer p{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .footer p{
+        font-size: 1rem;
+    }
+}
