@@ -5,6 +5,14 @@
     padding: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+    }
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
 .land {
     display: flex;
     flex-direction: column;
