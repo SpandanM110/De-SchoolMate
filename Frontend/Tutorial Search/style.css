@@ -37,5 +37,13 @@ h1{
 
 img{
     height: auto;
-    width: 50px;
+    width: 80px;
+}
+
+.submit-btn{
+    background-color: blueviolet;
+}
+.submit-btn:hover{
+    background-color: rgb(109, 33, 180);
+    cursor: pointer;
 }

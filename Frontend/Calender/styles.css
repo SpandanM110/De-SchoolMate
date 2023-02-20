@@ -6,7 +6,7 @@ html {
     height: 100%;
     font-family: 'IBM Plex Sans', sans-serif;
     color: #303633;
-    background-color: #C8D9E7;
+    background-color: #C18CF7;
     overflow: hidden;
     position: relative;
     outline: none;
@@ -17,14 +17,13 @@ html {
     position: absolute;
     width: 730px;
     height: 420px;
-    top: 50%;
+    top: 40%;
     left: 50%;
     box-sizing: border-box;
     transform: translate(-50%, -50%);
     transition: all 0.195s ease;
     transform-style: preserve-3d;
 }
-
 .content-wrapper.is-rotated-left {
     transform: translate(-50%, -50%) rotateY(-4deg);
 }
@@ -66,7 +65,7 @@ html {
 }
 
 .content-wrapper .right-wrapper {
-    background-color: #48A9A6;
+    background-color: #a155ee;
     color: white;
     transform-origin: left center;
     transform: rotateY(110deg);
@@ -100,7 +99,7 @@ html {
 
 .content-wrapper .left-wrapper .showDate i {
     cursor: pointer;
-    background: #48A9A6;
+    background: #a155ee;
     border-radius: 4px;
     padding: 8px 12px;
     transform: scale(1);
@@ -128,7 +127,7 @@ html {
 }
 
 .content-wrapper .left-wrapper table th {
-    color: #48A9A6;
+    color: #a155ee;
     font-size: 0.75em;
     text-transform: uppercase;
     margin-bottom: 10px;
@@ -136,7 +135,7 @@ html {
 
 .content-wrapper .left-wrapper table td {
     padding: 11px 5px;
-    color: #ced0ce;
+    color: #acacac;
     font-size: 0.75em;
     transition: all 0.3s;
     position: relative;
@@ -151,7 +150,7 @@ html {
     left: 50%;
     top: 100%;
     transform: translate(-50%, -8px);
-    background-color: #48A9A6;
+    background-color: #a155ee;
 }
 
 .content-wrapper .left-wrapper table td.currentDay::before {
@@ -159,22 +158,22 @@ html {
 }
 
 .content-wrapper .left-wrapper table td.selectable {
-    color: #303633;
+    color: #080d0b;
     cursor: pointer;
 }
 
 .content-wrapper .left-wrapper table td.selectable:hover {
-    background: #48A9A6;
+    background: #a155ee;
     color: white;
 }
 
 .content-wrapper .left-wrapper table td.between {
-    background: rgba(72, 169, 166, 0.65);
+    background: #a155ee;
     color: white;
 }
 
 .content-wrapper .left-wrapper table td.active,
 .content-wrapper .left-wrapper table td.hover {
-    background: #48A9A6;
+    background: #a155ee;
     color: white;
 }
