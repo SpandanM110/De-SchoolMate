@@ -1,4 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Poppins:wght@300&family=Roboto:wght@700&display=swap');
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.youtube{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
 .img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
@@ -9,4 +26,24 @@ body{
 
 h1{
     text-align: center;
+    padding-right: 1%;
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    height: auto;
+    width: 80px;
+}
+
+.submit-btn{
+    background-color: blueviolet;
+}
+.submit-btn:hover{
+    background-color: rgb(109, 33, 180);
+    cursor: pointer;
 }
