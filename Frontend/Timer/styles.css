@@ -1,9 +1,12 @@
+/* This is the body of the document. */
 body {
     font-family: 'Play', sans-serif;
     background: linear-gradient(90deg, #ab5ee3 0%, #9279a4 49%, #ab5ee3 100%);
+    /* The color of the text is #570c0c. */
     /* color: #570c0c; */
 }
 
+/* This is the container for the main content of the document. */
 .container {
     width: 80%;
     max-width: 500px;
@@ -11,26 +14,31 @@ body {
     margin: 20px auto;
 }
 
+/* This is the heading for the main content of the document. */
 h1 {
     margin-top: 20%;
     text-align: center;
     color: #6a019a;
 }
 
+/* This is a row of elements. */
 .row {
     overflow: hidden;
 }
 
+/* This is a half-width column. */
 .col-half {
     width: 50%;
     float: left;
 }
 
+/* This is a wrapper for a knob. */
 .knob-wrapper {
     text-align: center;
 }
 
 
+/* This is the style for buttons. */
 /* button styles */
 
 .buttons {
@@ -95,6 +103,7 @@ h1 {
 }
 
 
+/* This is the style for global overrides. */
 /* global override styles */
 
 .hidden {

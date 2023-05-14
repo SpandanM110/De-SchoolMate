@@ -1,146 +1,111 @@
+<!-- This is an [HTML document](poe://www.poe.com/_api/key_phrase?phrase=HTML%20document&prompt=Tell%20me%20more%20about%20HTML%20document.) that describes the [Features page](poe://www.poe.com/_api/key_phrase?phrase=Features%20page&prompt=Tell%20me%20more%20about%20Features%20page.) of a website called De SchoolMate. The page contains several features that the website provides to its users, and each feature is described using a card layout. -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <!-- The following meta tags provide information about the document, such as its character encoding and viewport settings, and the title of the page. -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Features | De SchoolMate</title>
+    <!-- The following link tags specify the location of the page's stylesheet and favicon. -->
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="../Media/DSM.svg" type="image/x-icon" />
 </head>
 
-<body>
-    <div class="body">
+<body> <!-- The page's content is contained within a div with the class "body". -->
+    <div class="body"> <!-- The "top" div contains a button that links back to the "Home" page. -->
         <div class="top"><button onclick="logout()">Home</button></div>
+        <!-- The "cards" div contains multiple "cardlist" divs, each of which contains two "card" divs. Each "card" div represents a feature of the website, and contains an image and a description of the feature. -->
         <div class="cards">
             <div class="cardlist">
                 <div class="card" onclick="todolist()">
-                    <div class="images">
-                        <img src="../Media/todoslist.svg" alt="Todos List" />
-                    </div>
+                    <div class="images"> <img src="../Media/todoslist.svg" alt="Todos List" /> </div>
                     <div class="text">
                         <h2>Todo List</h2>
-                        <p>
-                            A todos list feature on a website is a tool that allows users to
-                            create and manage a list of tasks or items that need to be
-                            completed. This feature typically provides a user-friendly
-                            interface for adding, editing, and deleting tasks, as well as
-                            setting due dates and priorities. Users can also mark tasks as
-                            completed or uncompleted, and may be able to sort or filter
-                            tasks based on various criteria, such as due date or priority
-                            level. A todos list feature can be particularly useful for
-                            individuals or teams who need to keep track of multiple tasks or
-                            projects and want to stay organized and focused.
-                        </p>
+                        <p> A todos list feature on a website is a tool that allows users to create and manage a list of
+                            tasks or items that need to be completed. This feature typically provides a user-friendly
+                            interface for adding, editing, and deleting tasks, as well as setting due dates and
+                            priorities. Users can also mark tasks as completed or uncompleted, and may be able to sort
+                            or filter tasks based on various criteria, such as due date or priority level. A todos list
+                            feature can be particularly useful for individuals or teams who need to keep track of
+                            multiple tasks or projects and want to stay organized and focused. </p>
                     </div>
                 </div>
                 <div class="card" onclick="timer()">
-                    <div class="images">
-                        <img src="../Media/timer.svg" alt="Timer" />
-                    </div>
+                    <div class="images"> <img src="../Media/timer.svg" alt="Timer" /> </div>
                     <div class="text">
                         <h2>Pomodoro Timer</h2>
-                        <p>
-                            A Pomodoro timer feature on a website is a tool that helps users
-                            manage their time more effectively by breaking their work or
-                            study sessions into smaller, more manageable chunks. The
-                            Pomodoro technique is a popular time management method that
-                            involves working in 25-minute intervals, followed by short
-                            breaks. The Pomodoro timer feature typically provides a
-                            user-friendly interface for setting and tracking work and break
-                            intervals, and may include audio or visual cues to indicate when
-                            each interval has started and ended.
-                        </p>
+                        <p> A Pomodoro timer feature on a website is a tool that helps users manage their time more
+                            effectively by breaking their work or study sessions into smaller, more manageable chunks.
+                            The Pomodoro technique is a popular time management method that involves working in
+                            25-minute intervals, followed by short breaks. The Pomodoro timer feature typically provides
+                            a user-friendly interface for setting and tracking work and break intervals, and may include
+                            audio or visual cues to indicate when each interval has started and ended. </p>
                     </div>
                 </div>
             </div>
             <div class="cardlist">
                 <div class="card" onclick="note()">
-                    <div class="images">
-                        <img src="../Media/Group 1.svg" alt="Take a Note" />
-                    </div>
+                    <div class="images"> <img src="../Media/Group 1.svg" alt="Take a Note" /> </div>
                     <div class="text">
                         <h2>Take a Note</h2>
-                        <p>
-                            A note making feature on a website is a tool that allows users
-                            to create and store short text-based notes or memos. This
-                            feature typically provides a user-friendly interface for
-                            creating new notes, editing existing ones, and organizing notes
-                            into different categories or folders. Users may also be able to
-                            add tags or labels to their notes, which can help with searching
-                            and filtering. Some note making features may also allow users to
-                            format text, add images or attachments, and set reminders or
-                            alarms for specific notes. A note making feature can be useful
-                            for individuals or teams who want to capture and organize ideas,
-                            reminders, and other information quickly and easily, and access
-                            them from anywhere with an internet connection.
-                        </p>
+                        <p> A note making feature on a website is a tool that allows users to create and store short
+                            text-based notes or memos. This feature typically provides a user-friendly interface for
+                            creating new notes, editing existing ones, and organizing notes into different categories or
+                            folders. Users may also be able to add tags or labels to their notes, which can help with
+                            searching and filtering. Some note making features may also allow users to format text, add
+                            images or attachments, and set reminders or alarms for specific notes. A note making feature
+                            can be useful for individuals or teams who want to capture and organize ideas, reminders,
+                            and other information quickly and easily, and access them from anywhere with an internet
+                            connection. </p>
                     </div>
                 </div>
                 <div class="card" onclick="books()">
-                    <div class="images">
-                        <img src="../Media/book.svg" alt="Books Search" />
-                    </div>
+                    <div class="images"> <img src="../Media/book.svg" alt="Books Search" /> </div>
                     <div class="text">
                         <h2>Search Books</h2>
-                        <p>
-                            A book search feature on a website is a tool that allows users
-                            to search for books by various criteria such as title, author,
-                            subject, or keyword. This feature typically provides a
-                            user-friendly interface for entering search terms, browsing
-                            search results, and accessing detailed information about
-                            individual books such as the cover image, description, and
-                            reviews.
-                        </p>
+                        <p> A book search feature on a website is a tool that allows users to search for books by
+                            various criteria such as title, author, subject, or keyword. This feature typically provides
+                            a user-friendly interface for entering search terms, browsing search results, and accessing
+                            detailed information about individual books such as the cover image, description, and
+                            reviews. </p>
                     </div>
                 </div>
             </div>
             <div class="cardlist">
                 <div class="card" onclick="calender()">
-                    <div class="images">
-                        <img src="../Media/calender.svg" alt="Calender" />
-                    </div>
+                    <div class="images"> <img src="../Media/calender.svg" alt="Calender" /> </div>
                     <div class="text">
                         <h2>Calender</h2>
-                        <p>
-                            A calendar feature on a website is a tool that allows users to
-                            view and organize events, tasks, and appointments on a digital
-                            calendar. This feature typically provides a user-friendly
-                            interface for adding new events or tasks, editing existing ones,
-                            setting reminders or notifications, and sharing the calendar
-                            with others. Users may also be able to view the calendar in
-                            different formats, such as daily, weekly, or monthly views, and
-                            may be able to color-code events or tasks for easy
-                            identification. A calendar feature can be particularly useful
-                            for individuals or teams who need to manage multiple events or
-                            tasks and want to stay organized and on track.
-                        </p>
+                        <p> A calendar feature on a website is a tool that allows users to view and organize events,
+                            tasks, and appointments on a digital calendar. This feature typically provides a
+                            user-friendly interface for adding new events or tasks, editing existing ones, setting
+                            reminders or notifications, and sharing the calendar with others. Users may also be able to
+                            view the calendar in different formats, such as daily, weekly, or monthly views, and may be
+                            able to color-code events or tasks for easy identification. A calendar feature can be
+                            particularly useful for individuals or teams who need to manage multiple events or tasks and
+                            want to stay organized and on track. </p>
                     </div>
                 </div>
                 <div class="card" onclick="tutorial()">
-                    <div class="images">
-                        <img src="../Media/search.svg" alt="Tutorial Search" />
-                    </div>
+                    <div class="images"> <img src="../Media/search.svg" alt="Tutorial Search" /> </div>
                     <div class="text">
                         <h2>Search Tutorials</h2>
-                        <p>
-                            A YouTube tutorials search feature on a website is a tool that
-                            allows users to search for instructional videos on YouTube by
-                            using various criteria such as keywords, categories, or specific
-                            channels. This feature typically provides a user-friendly
-                            interface for entering search terms, browsing search results,
-                            and accessing detailed information about individual videos such
-                            as the title, description, duration, and views.
-                        </p>
+                        <p> A YouTube tutorials search feature on a website is a tool that allows users to search for
+                            instructional videos on YouTube by using various criteria such as keywords, categories, or
+                            specific channels. This feature typically provides a user-friendly interface for entering
+                            search terms, browsing search results, and accessing detailed information about individual
+                            videos such as the title, description, duration, and views. </p>
                     </div>
                 </div>
             </div>
-        </div>
+        </div> <!-- The "footer" div contains the copyright information for the website. -->
         <div class="footer">
             <p>Copyright © De SchoolMate 2023</p>
         </div>
     </div>
+    <!-- The page's JavaScript code is contained within a script tag, which references an external JavaScript file. -->
     <script src="script.js"></script>
 </body>
 

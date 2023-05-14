@@ -1,9 +1,12 @@
+/* Importing fonts from Google Fonts API */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Poppins:wght@300&family=Roboto:wght@700&display=swap');
 
+/* Applying the 'Roboto' font to all elements */
 *{
     font-family: 'Roboto', sans-serif;
 }
 
+/* Styling for the container with class 'youtube' */
 .youtube{
     display: flex;
     flex-direction: column;
@@ -12,6 +15,7 @@
     height: 80vh;
 }
 
+/* Styling for the container with class 'img' */
 .img{
     display: flex;
     justify-content: center;
@@ -19,30 +23,37 @@
     text-align: center;
 }
 
+/* Styling for the body */
 body{
     /* padding-bottom: 200px; */
     background-color: #D09AF7;
 }
 
+/* Styling for the h1 element */
 h1{
     text-align: center;
     padding-right: 1%;
 }
 
+/* Styling for the container with class 'form' */
 .form{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+/* Styling for the img element */
 img{
     height: auto;
     width: 80px;
 }
 
+/* Styling for the submit button */
 .submit-btn{
     background-color: blueviolet;
 }
+
+/* Styling for the hover effect on the submit button */
 .submit-btn:hover{
     background-color: rgb(109, 33, 180);
     cursor: pointer;
