@@ -1,3 +1,4 @@
+// Get references to the relevant elements on the page
 const addBox = document.querySelector(".add-box"),
     popupBox = document.querySelector(".popup-box"),
     popupTitle = popupBox.querySelector("header p"),
@@ -6,11 +7,15 @@ const addBox = document.querySelector(".add-box"),
     descTag = popupBox.querySelector("textarea"),
     addBtn = popupBox.querySelector("button");
 
+// Define an array of month names and retrieve any existing notes from local storage
 const months = ["January", "February", "March", "April", "May", "June", "July",
     "August", "September", "October", "November", "December"];
 const notes = JSON.parse(localStorage.getItem("notes") || "[]");
+
+// Set some initial variables for tracking whether the user is updating a note, and which note they are updating
 let isUpdate = false, updateId;
 
+// Add an event listener to the "add new note" button to show the popup
 addBox.addEventListener("click", () => {
     popupTitle.innerText = "Add a new Note";
     addBtn.innerText = "Add Note";
@@ -19,6 +24,7 @@ addBox.addEventListener("click", () => {
     if (window.innerWidth > 660) titleTag.focus();
 });
 
+// Add an event listener to the "close" button to hide the popup and reset the input fields
 closeIcon.addEventListener("click", () => {
     isUpdate = false;
     titleTag.value = descTag.value = "";
@@ -26,6 +32,7 @@ closeIcon.addEventListener("click", () => {
     document.querySelector("body").style.overflow = "auto";
 });
 
+// Define a function to display all of the existing notes on the page
 function showNotes() {
     if (!notes) return;
     document.querySelectorAll(".note").forEach(li => li.remove());
@@ -52,6 +59,7 @@ function showNotes() {
 }
 showNotes();
 
+// Define a function to show the menu of options for a given note
 function showMenu(elem) {
     elem.parentElement.classList.add("show");
     document.addEventListener("click", e => {
@@ -61,6 +69,7 @@ function showMenu(elem) {
     });
 }
 
+// Define a function to delete a note from the list
 function deleteNote(noteId) {
     let confirmDel = confirm("Are you sure you want to delete this note?");
     if (!confirmDel) return;
@@ -69,6 +78,7 @@ function deleteNote(noteId) {
     showNotes();
 }
 
+// Define a function to update a note in the list
 function updateNote(noteId, title, filterDesc) {
     let description = filterDesc.replaceAll('<br/>', '\r\n');
     updateId = noteId;
@@ -80,6 +90,7 @@ function updateNote(noteId, title, filterDesc) {
     addBtn.innerText = "Update Note";
 }
 
+// Add an event listener to the "add note" button to save a new note or update an existing note
 addBtn.addEventListener("click", e => {
     e.preventDefault();
     let title = titleTag.value.trim(),
@@ -103,4 +114,3 @@ addBtn.addEventListener("click", e => {
         closeIcon.click();
     }
 });
-Footer

@@ -1,45 +1,62 @@
+<!-- The doctype declaration specifies the version of HTML used in this document -->
 <!DOCTYPE html>
+<!-- The html element encloses the entire document -->
 <html lang="en" dir="ltr">
 
 <head>
+    <!-- The meta element provides metadata about the document, such as its character encoding and viewport settings -->
     <meta charset="utf-8">
     <title>Make Notes | De SchoolMate</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- The viewport meta tag sets the width of the viewport to the width of the device, and sets the initial zoom level -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The link element is used to link to an external stylesheet file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- The link element is used to link to an external icon font file -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- The link element is used to specify the favicon, which is the icon displayed in the browser tab or bookmark list -->
     <link rel="icon" href="../Media/DSM.svg" type="image/x-icon" />
 </head>
 
 <body>
+    <!-- The div element with class "popup-box" is a container for the popup dialog -->
     <div class="popup-box">
+        <!-- The div element with class "popup" is the actual popup dialog -->
         <div class="popup">
             <div class="content">
                 <header>
+                    <!-- The p element is empty and serves as a placeholder for the header text -->
                     <p></p>
+                    <!-- The i element with class "uil uil-times" is an icon that represents the "close" button -->
                     <i class="uil uil-times"></i>
                 </header>
+                <!-- The form element is used to create a form for the user to input data -->
                 <form action="#">
                     <div class="row title">
                         <label>Title</label>
+                        <!-- The input element with type "text" is used to create a single-line text input field -->
                         <input type="text" spellcheck="false">
                     </div>
                     <div class="row description">
                         <label>Description</label>
+                        <!-- The textarea element is used to create a multi-line text input field -->
                         <textarea spellcheck="false"></textarea>
                     </div>
+                    <!-- The button element is used to create a submit button for the form -->
                     <button></button>
                 </form>
             </div>
         </div>
     </div>
+    <!-- The div element with class "wrapper" is a container for the "add new note" button -->
     <div class="wrapper">
+        <!-- The li element with class "add-box" is a container for the "add new note" button -->
         <li class="add-box">
             <div class="icon"><i class="uil uil-plus"></i></div>
             <p>Add new note</p>
         </li>
     </div>
+    <!-- The script element is used to include a JavaScript file in the document -->
     <script src="script.js"></script>
-
 </body>
 
 </html>

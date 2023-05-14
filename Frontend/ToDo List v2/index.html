@@ -7,13 +7,20 @@
     <meta name="theme-color" content="#062e3f">
     <meta name="Description" content="A dynamic and aesthetic To-Do List WebApp.">
 
+    <!-- Linking Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
 
+    <!-- Linking Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
         integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
 
+    <!-- Linking CSS file -->
     <link rel="stylesheet" href="CSS/main.css">
+
+    <!-- Linking favicon -->
     <link rel="icon" href="../Media/DSM.svg" type="image/x-icon" />
+
+    <!-- Linking typed.js for typing animation -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"
         integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg=="
         crossorigin="anonymous"></script>
@@ -23,18 +30,20 @@
 </head>
 
 <body>
+    <!-- Header section -->
     <div id="header">
+        <!-- Theme selector buttons -->
         <div class="flexrow-container">
             <div class="standard-theme theme-selector"></div>
             <div class="light-theme theme-selector"></div>
             <div class="darker-theme theme-selector"></div>
         </div>
 
+        <!-- Text for typing animation -->
         <div class="text"></div>
     </div>
 
-
-
+    <!-- Form section for adding a new task -->
     <div id="form">
         <form>
             <input class="todo-input" type="text" placeholder="Add a task.">
@@ -42,21 +51,26 @@
         </form>
     </div>
 
+    <!-- Version section -->
     <div class="version">
+        <!-- Date and time display -->
         <div>
             <p><span id="datetime"></span></p>
             <script src="JS/time.js"></script>
         </div>
 
+        <!-- List of todos -->
         <div id="myUnOrdList">
             <ul class="todo-list">
             </ul>
         </div>
+        <!-- Linking JavaScript file for the page -->
         <script src="JS/main.js" type="text/javascript"> </script>
 </body>
 
-
+<!-- JavaScript code for the page -->
 <script>
+    // Typed.js for typing animation
     var typing = new Typed(".text", {
         strings: ["You gonna rock the world","Keep on Grinding", "Never Stop Hustling"],
         typeSpeed: 100,

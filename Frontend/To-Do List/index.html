@@ -7,6 +7,7 @@
     <link rel="icon" href="../Media/DSM.svg" type="image/x-icon" />
     <title>Todo List</title>
 
+    <!-- Styling for the page -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
 
@@ -81,41 +82,40 @@
             text-align: center;
         }
     </style>
-
-
-
-
-
-
 </head>
 
 <body>
     <h1>😊 Need to Do 😊</h1>
     <form id="form">
+        <!-- Input field for adding a new todo -->
         <input type="text" class="input" id="input" placeholder="Enter your todo" autocomplete="off">
 
+        <!-- List of todos -->
         <ul class="todos" id="todos"></ul>
     </form>
+    <!-- Instruction for toggling and deleting todos -->
     <small>Left click to toggle completed. <br> Right click to delete todo</small>
 
+    <!-- JavaScript code for the page -->
     <script>
-
+        // Get form, input field and list of todos
         const form = document.getElementById('form')
         const input = document.getElementById('input')
         const todosUL = document.getElementById('todos')
 
+        // Get existing todos from local storage and add them to the list
         const todos = JSON.parse(localStorage.getItem('todos'))
-
         if (todos) {
             todos.forEach(todo => addTodo(todo))
         }
 
+        // Add event listener to the form for submitting a new todo
         form.addEventListener('submit', (e) => {
             e.preventDefault()
-
             addTodo()
         })
 
+        // Function for adding a new todo to the list
         function addTodo(todo) {
             let todoText = input.value
 
@@ -125,20 +125,22 @@
 
             if (todoText) {
                 const todoEl = document.createElement('li')
+                // Add completed class if todo is completed
                 if (todo && todo.completed) {
                     todoEl.classList.add('completed')
                 }
 
                 todoEl.innerText = todoText
 
+                // Add event listener for toggling a todo
                 todoEl.addEventListener('click', () => {
                     todoEl.classList.toggle('completed')
                     updateLS()
                 })
 
+                // Add event listener for deleting a todo
                 todoEl.addEventListener('contextmenu', (e) => {
                     e.preventDefault()
-
                     todoEl.remove()
                     updateLS()
                 })
@@ -147,10 +149,12 @@
 
                 input.value = ''
 
+                // Update local storage
                 updateLS()
             }
         }
 
+        // Function for updating local storage with the current list of todos
         function updateLS() {
             todosEl = document.querySelectorAll('li')
 
@@ -165,13 +169,6 @@
 
             localStorage.setItem('todos', JSON.stringify(todos))
         }
-
-
-
-
-
-
-
     </script>
 </body>
 

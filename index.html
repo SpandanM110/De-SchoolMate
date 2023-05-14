@@ -1,43 +1,49 @@
+<!-- This is an [HTML file](poe://www.poe.com/_api/key_phrase?phrase=HTML%20file&prompt=Tell%20me%20more%20about%20HTML%20file.) that creates a [landing page](poe://www.poe.com/_api/key_phrase?phrase=landing%20page&prompt=Tell%20me%20more%20about%20landing%20page.) for a website called De SchoolMate -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
+    <!-- The head section contains metadata about the page, including its character encoding, viewport settings, and title -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>De SchoolMate</title>
+    <!-- This link tag loads an external CSS file that styles the landing page -->
     <link rel="stylesheet" href="./Frontend/Landing Page/style.css" />
+
+    <!-- This link tag sets the website's favicon -->
     <link rel="icon" href="./Frontend/Media/DSM.svg" type="image/x-icon" />
 </head>
 
-<body>
+<body> <!-- The body section contains the content of the website -->
     <div class="land" id="land">
+        <!-- This div contains the landing page's header, including the navbar and login button -->
         <div class="navbar">
-            <div class="navwap">
-                <div class="funcs">
-                    <a href="#land">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#features">Features</a>
-                </div>
+            <div class="navwap"> <!-- This div contains links to different sections of the page -->
+                <div class="funcs"> <a href="#land">Home</a> <a href="#about">About</a> <a href="#features">Features</a>
+                </div> <!-- This div contains a login button that opens the app -->
                 <div class="login"><button onclick="login()" type="button">Open App</button></div>
             </div>
-        </div>
+        </div> <!-- This div contains the title and subtitle of the landing page -->
         <div class="title">
             <h1>De <span style="color: #5a01b3">SchoolMate</span></h1>
             <h3>A complete solution for your daily studies</h3>
         </div>
     </div>
 
+    <!-- This section contains information about the website and its features -->
     <div class="temp" id="about">
         <div class="about">
             <div class="text">
                 <h1>About Us</h1>
             </div>
+            <!-- This div contains a description of the website and its features -->
             <div class="description">
                 <p>Our website is a powerful productivity and organization tool designed specifically for students. With
                     a wide range of features such as a Pomodoro timer, note making, todos list, and more, our website is
                     a one-stop-shop for students to manage their daily activities and improve their productivity.
-                    <br><br>Our website is equipped with a variety of features such as a calendar, goal-setting, and task
+                    <br><br>Our website is equipped with a variety of features such as a calendar, goal-setting, and
+                    task
                     prioritization tools, which help students to plan their study schedule efficiently and effectively.
                     In addition, we offer a comprehensive library of educational resources such as online courses,
                     tutorial videos, and study guides, which are designed to help students achieve their academic goals
@@ -45,6 +51,7 @@
                 </p>
             </div>
         </div>
+        <!-- This div contains information about the website's features, including three cards with icons and descriptions -->
         <div class="features" id="features">
             <div class="heading">
                 <h1>Features</h1>
@@ -56,7 +63,8 @@
                         <h3>Book Search</h3>
                     </div>
                     <div class="lomgdisc">
-                        <p style="text-align: justify;">A book search feature on a website is a tool that allows users to search for books by various criteria such as title, author, subject, or keyword.</p>
+                        <p style="text-align: justify;">A book search feature on a website is a tool that allows users
+                            to search for books by various criteria such as title, author, subject, or keyword.</p>
                     </div>
 
                 </div>
@@ -77,17 +85,20 @@
                         <h3>Note Making</h3>
                     </div>
                     <div class="lomgdisc">
-                        <p style="text-align: justify;">A note making feature on a website is a tool that allows users to create and store short text-based notes or memos. </p>
+                        <p style="text-align: justify;">A note making feature on a website is a tool that allows users
+                            to create and store short text-based notes or memos. </p>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- This div contains the footer of the landing page -->
         <div class="footer">
             <p>Copyright © De SchoolMate 2023</p>
         </div>
     </div>
+
+    <!-- This script tag loads an external JavaScript file that contains a function to open the app -->
     <script src="./script.js"></script>
-</body>
 </body>
 
 </html>

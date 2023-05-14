@@ -1,26 +1,33 @@
+/* This is a CSS file that styles a book finder web page */
+
+/* This code sets the background color, height, and background image properties for the body section */
 body {
   background-color: #D09AF7;
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.center {
+  }
+  
+  /* This code centers the page content vertically */
+  .center {
   margin: auto;
   margin-top: 200px;
-}
-
-#header {
+  }
+  
+  /* This code sets the font family and font size for the header */
+  #header {
   font-family: 'Righteous', sans-serif;
   font-size: 3rem;
-}
-
-h2 {
+  }
+  
+  /* This code sets the font family for all h2 tags */
+  h2 {
   font-family: 'Righteous', sans-serif;
-}
-
-.book-list {
+  }
+  
+  /* This code sets the margin top and visibility properties for the book search result list */
+  .book-list {
   margin-top: 50px;
   visibility: hidden;
-}
+  }

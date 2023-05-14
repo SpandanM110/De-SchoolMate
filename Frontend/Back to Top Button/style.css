@@ -1,3 +1,9 @@
+/* This CSS code styles a button element with an ID of "button" */
+/* It sets the button's display to inline-block, background color to #dc3545, width and height to 50px, and text alignment to center */
+/* It also gives the button a border-radius of 4px and positions it fixed to the bottom right of the screen */
+/* The button has a transition effect on its background color of 0.3s and an initial opacity of 0.5s, which is later changed to 1 */
+/* The button has a z-index of 1000 to ensure it appears on top of other elements */
+
 #button {
     display: inline-block;
     background-color: #dc3545;
@@ -8,11 +14,14 @@
     position: fixed;
     bottom: 30px;
     right: 30px;
-    transition: background-color .3s;
+    transition: background-color 0.3s;
     opacity: 0.5s, visibility 0.5s;
     opacity: 1;
     z-index: 1000;
 }
+
+/* This code styles an i element within the #button element */
+/* It sets the font size to 32px, color to white, and positions it relative to the top of the button */
 
 #button i {
     font-size: 32px;
@@ -21,10 +30,16 @@
     top: 10px;
 }
 
+/* This code styles the #button element when it is hovered over by a cursor */
+/* It changes the background color to #333 and also changes the cursor to a pointer */
+
 #button:hover {
     cursor: pointer;
     background-color: #333;
 }
+
+/* This code styles the #button element when it has a class of "show" */
+/* It changes the opacity of the button to 1, making it fully visible */
 
 #button.show {
     opacity: 1;

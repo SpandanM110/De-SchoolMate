@@ -1,5 +1,7 @@
+/* Import fonts from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&family=Roboto:ital,wght@0,300;0,400;1,100&display=swap');
 
+/* Set global styles for the page */
 body,
 html {
     width: 100%;
@@ -10,9 +12,10 @@ html {
     overflow: hidden;
     position: relative;
     outline: none;
-    perspective: 1000px;
+    perspective: 1000px; /* Set 3D perspective for the page */
 }
 
+/* Set styles for the main calendar container */
 .content-wrapper {
     position: absolute;
     width: 730px;
@@ -22,16 +25,20 @@ html {
     box-sizing: border-box;
     transform: translate(-50%, -50%);
     transition: all 0.195s ease;
-    transform-style: preserve-3d;
+    transform-style: preserve-3d; /* Set 3D perspective for the container */
 }
+
+/* Set styles for rotating the calendar to the left */
 .content-wrapper.is-rotated-left {
     transform: translate(-50%, -50%) rotateY(-4deg);
 }
 
+/* Set styles for rotating the calendar to the right */
 .content-wrapper.is-rotated-right {
     transform: translate(-50%, -50%) rotateY(4deg);
 }
 
+/* Set styles for the left and right sidebar containers */
 .content-wrapper .left-wrapper,
 .content-wrapper .right-wrapper {
     background-color: white;
@@ -46,6 +53,7 @@ html {
     align-items: center;
 }
 
+/* Set styles for the header section of the calendar */
 .content-wrapper .header {
     padding: 15px 0 20px;
     display: flex;
@@ -53,17 +61,20 @@ html {
     width: 100%;
 }
 
+/* Set styles for the arrow icons in the header section */
 .content-wrapper .header i {
     padding: 0 5px;
     cursor: pointer;
 }
 
+/* Set styles for the month and year text in the header section */
 .content-wrapper .header span {
     display: inline-block;
     margin: 0 3px;
     font-weight: 700;
 }
 
+/* Set styles for the right sidebar container */
 .content-wrapper .right-wrapper {
     background-color: #a155ee;
     color: white;
@@ -72,31 +83,37 @@ html {
     transition: all 0.5s;
 }
 
+/* Set styles for showing the right sidebar container */
 .content-wrapper .right-wrapper.is-active {
     transform: rotateY(0deg);
 }
 
+/* Set styles for the header section of the right sidebar */
 .content-wrapper .right-wrapper .header {
     text-align: left;
     justify-content: center;
 }
 
+/* Set styles for the day number in the right sidebar */
 .content-wrapper .right-wrapper .day {
     font-size: 12em;
     text-indent: -12px;
     display: block;
 }
 
+/* Set styles for the month name in the right sidebar */
 .content-wrapper .right-wrapper .month {
     font-size: 2.5em;
 }
 
+/* Set styles for the date display in the left sidebar */
 .content-wrapper .left-wrapper .showDate {
     color: white;
     text-align: right;
     width: 100%;
 }
 
+/* Set styles for the button to toggle the date display format */
 .content-wrapper .left-wrapper .showDate i {
     cursor: pointer;
     background: #a155ee;
@@ -106,10 +123,12 @@ html {
     transition: all 0.3s;
 }
 
+/* Set styles for the active state of the date display format button */
 .content-wrapper .left-wrapper .showDate i.is-active {
     transform: scale(-1);
 }
 
+/* Set styles for the table element containing the calendar dates */
 .content-wrapper .left-wrapper table {
     text-align: center;
     font-family: 'IBM Plex Sans', sans-serif;
@@ -119,6 +138,7 @@ html {
     border-collapse: collapse;
 }
 
+/* Set styles for the horizontal divider lines in the table */
 .content-wrapper .left-wrapper table tbody:before {
     content: "-";
     display: block;
@@ -126,6 +146,7 @@ html {
     color: transparent;
 }
 
+/* Set styles for the table header cells */
 .content-wrapper .left-wrapper table th {
     color: #a155ee;
     font-size: 0.75em;
@@ -133,6 +154,7 @@ html {
     margin-bottom: 10px;
 }
 
+/* Set styles for the table cells containing calendar dates */
 .content-wrapper .left-wrapper table td {
     padding: 11px 5px;
     color: #acacac;
@@ -141,6 +163,7 @@ html {
     position: relative;
 }
 
+/* Set styles for the vertical divider lines in the table */
 .content-wrapper .left-wrapper table td::before {
     content: "";
     display: none;
@@ -153,25 +176,30 @@ html {
     background-color: #a155ee;
 }
 
+/* Set styles for the vertical divider line in the table for the current day */
 .content-wrapper .left-wrapper table td.currentDay::before {
     display: block;
 }
 
+/* Set styles for the selectable calendar dates */
 .content-wrapper .left-wrapper table td.selectable {
     color: #080d0b;
     cursor: pointer;
 }
 
+/* Set styles for the hover state of selectable calendar dates */
 .content-wrapper .left-wrapper table td.selectable:hover {
     background: #a155ee;
     color: white;
 }
 
+/* Set styles for the table cells between selected calendar dates */
 .content-wrapper .left-wrapper table td.between {
     background: #a155ee;
     color: white;
 }
 
+/* Set styles for the active and hover states of selected calendar dates */
 .content-wrapper .left-wrapper table td.active,
 .content-wrapper .left-wrapper table td.hover {
     background: #a155ee;

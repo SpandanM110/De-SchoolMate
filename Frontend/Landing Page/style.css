@@ -1,18 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Poppins:wght@300&family=Roboto:wght@700&display=swap');
+/* Importing Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Poppins:wght@300&family=Roboto:wght@700&display=swap");
 
+/* Setting default margin and padding to 0 */
 * {
     margin: 0;
     padding: 0;
 }
 
-html{
+/* Setting smooth scroll behavior for the HTML element */
+html {
     scroll-behavior: smooth;
-    }
+}
 
-body::-webkit-scrollbar{
+/* Hiding the scrollbar */
+body::-webkit-scrollbar {
     display: none;
 }
 
+/* Styling for the landing section */
 .land {
     display: flex;
     flex-direction: column;
@@ -26,332 +31,312 @@ body::-webkit-scrollbar{
     width: 100%;
 }
 
-.land .title{
+/* Styling for the title in the landing section */
+.land .title {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
+/* Styling for the main title in the landing section */
 .land .title h1 {
     opacity: 80%;
     font-size: 5rem;
 }
 
-.land .title h3{
+/* Styling for the subtitle in the landing section */
+.land .title h3 {
     opacity: 90%;
     font-size: 1.6rem;
 }
 
-.navbar{
+/* Styling for the navigation bar */
+.navbar {
     position: absolute;
     top: 0;
     margin-top: 2%;
 }
 
-.navwap{
+/* Styling for the navigation links */
+.navwap {
     display: flex;
     flex-direction: row;
     gap: 120vh;
 }
 
+/* Media Query for smaller screens */
 @media screen and (max-width: 1000px) {
-    .navwap{
+    .navwap {
         gap: 100vh;
     }
 }
 
+/* Media Query for even smaller screens */
 @media screen and (max-width: 900px) {
-    .navwap{
+    .navwap {
         gap: 80vh;
     }
 }
 
-.funcs{
+/* Styling for the functional links */
+.funcs {
     float: left;
     display: flex;
     flex-direction: row;
     gap: 100%;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: bold;
 }
 
+/* Media Query for smaller screens */
 @media screen and (max-width: 900px) {
-    .funcs{
+    .funcs {
         gap: 80%;
     }
 }
 
+/* Media Query for even smaller screens */
 @media screen and (max-width: 800px) {
-    .navwap{
+    .navwap {
         gap: 40vh;
     }
 
-    .funcs{
+    .funcs {
         gap: 40%;
     }
 
+    /* Styling for the main title in the landing section on smaller screens */
     .land .title h1 {
-        opacity: 80%;
-        font-size: 4rem;
+        font-size: 3rem;
     }
-    
-    .land .title h3{
-        opacity: 90%;
+
+    /* Styling for the subtitle in the landing section on smaller screens */
+    .land .title h3 {
         font-size: 1.2rem;
     }
 }
 
-@media screen and (max-width: 515px) {
-    .navwap{
-        gap: 20vh;
-    }
-
-    .funcs{
-        gap: 20%;
-    }
-
-    .land .title h1 {
-        opacity: 80%;
-        font-size: 3rem;
-    }
-    
-    .land .title h3{
-        opacity: 90%;
-        font-size: 1rem;
-    }
-}
-
-@media screen and (max-width: 380px) {
-    .navwap{
-        gap: 10vh;
-    }
-
-    .funcs{
-        gap: 10%;
-    }
-
-    .land .title h1 {
-        opacity: 80%;
-        font-size: 2.5rem;
-    }
-    
-    .land .title h3{
-        opacity: 90%;
-        font-size: 0.8rem;
-    }
-}
-
-.funcs a{
-    color:black;
-    text-decoration: none;
-    font-size: 1rem;
-}
-
-.login{
-    float: right;
-}
-
-.login button{
-    padding: 5px 20px;
-    border-radius: 13px;
-    border: 0px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    background-color: #C18CF7;
-}
-
-.funcs a:hover{
-    font-weight: bolder;
-    color:#a155ee;
-    cursor: pointer;
-}
-
-.login button:hover {
-    background-color:#a155ee;
-    cursor: pointer;
-}
-
-.about{
+/* Styling for the about section */
+.about {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: justify;
-    background-color: #D09AF7;
+    background-color: #e2dff4;
     padding-top: 10%;
     padding-left: 20%;
     padding-right: 20%;
-    padding-bottom: 5%;
+    padding-bottom: 10%;
 }
 
-.about .description {
-    background-color: white;
-    background-blend-mode: soft-light;
-    opacity: 80%;
-    border-radius: 25px;
-    z-index: 0;
-}
-
-.about .text h1{
-    margin-bottom: 10%;
+/* Styling for the title in the about section */
+.about .text h1 {
+    color: #540678;
     font-size: 3rem;
-    font-family: 'Open Sans', sans-serif;
-    color: #7A01B3;
+    margin-bottom: 10%;
+    font-family: "Open Sans", sans-serif;
 }
-.about .description p{
-    opacity: 100%;
-    z-index: 1;
-    margin: 10%;
-    gap: 10;
-    font-family: 'Open Sans', sans-serif;
+
+/* Styling for the description in the about section */
+.about .description p {
     font-size: 1.2rem;
-    color: #7A01B3;
+    margin-bottom: 10%;
+    font-family: "Poppins", sans-serif;
 }
 
-@media screen and (max-width: 750px) {
-    .about .text h1{
-        font-size: 2.5rem;
-    }
-    .about .description p{
-        font-size: 1.0rem;
-    }
-}
-
+/* Media Query for smaller screens */
 @media screen and (max-width: 580px) {
-    .about .text h1{
+
+    /* Decreasing the font size of the title in the about section */
+    .about .text h1 {
         font-size: 2.2rem;
     }
-    .about .description p{
+
+    /* Decreasing the font size of the description in the about section */
+    .about .description p {
         font-size: 0.8rem;
     }
 }
 
+/* Media Query for even smaller screens */
 @media screen and (max-width: 580px) {
-    .about .text h1{
+
+    /* Decreasing the font size of the title in the about section */
+    .about .text h1 {
         font-size: 2.1rem;
     }
-    .about .description p{
+
+    /* Decreasing the font size of the description in the about section */
+    .about .description p {
         font-size: 0.7rem;
     }
 }
 
 @media screen and (max-width: 330px) {
-    .about .text h1{
+    .about .text h1 {
         font-size: 2rem;
     }
-    .about .description p{
+
+    .about .description p {
         font-size: 0.7rem;
     }
 }
 
-.features{
+/* Styling for the features section */
+.features {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: justify;
-    background-color: #BD48F4;
+    background-color: #bd48f4;
     padding-top: 10%;
     padding-left: 20%;
     padding-right: 20%;
     padding-bottom: 10%;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
-.features .cards{
+/* Styling for the cards in the features section */
+.features .cards {
     display: flex;
     flex-direction: row;
     gap: 35px;
 }
 
-.features .card{
+/* Styling for the individual card in the features section */
+.features .card {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: #D9D9D9;
+    background-color: #d9d9d9;
     opacity: 80%;
     border-radius: 25px;
     padding: 5% 5%;
 }
 
-.features .card .lomgo img{
+/* Styling for the logo in the individual card in the features section */
+.features .card .lomgo img {
     height: auto;
     width: 50px;
 }
 
-.features .card .lomgo{
-    background-color: #D09AF7;
+/* Styling for the logo container in the individual card in the features section */
+.features .card .lomgo {
+    background-color: #d09af7;
     border-radius: 50px;
     border: 0px;
     padding: 5% 5%;
     margin-top: 15%;
 }
 
-.features .heading h1{
+/* Styling for the heading in the features section */
+.features .heading h1 {
     color: #540678;
     margin-bottom: 15%;
     font-size: 3rem;
 }
 
-.features .card .lomghead h3{
-    margin: 15% 0; 
+/* Styling for the heading in the individual card in the features section */
+.features .card .lomghead h3 {
+    margin: 15% 0;
 }
 
-.features .card .lomgdisc p{
-    margin-bottom: 10%; 
+/* Styling for the description in the individual card in the features section */
+.features .card .lomgdisc p {
+    margin-bottom: 10%;
 }
 
-@media screen and (max-width: 1000px){
-    .features .card .lomgdisc p{
+/* Media Query for smaller screens */
+@media screen and (max-width: 1000px) {
+
+    /* Decreasing the font size of the description in the individual card in the features section */
+    .features .card .lomgdisc p {
         font-size: 0.7rem;
     }
-    .features .card .lomghead h3{
+
+    /* Decreasing the font size of the heading in the individual card in the features section */
+    .features .card .lomghead h3 {
         font-size: 0.9rem;
     }
-    .features .card .lomgo img{
+
+    /* Decreasing the size of the logo in the individual card in the features section */
+    .features .card .lomgo img {
         height: auto;
         width: 30px;
     }
 }
 
-@media screen and (max-width: 800px){
-    .features .cards{
+/* Media Query for even smaller screens */
+@media screen and (max-width: 800px) {
+
+    /* Changing the flex direction of the cards in the features section */
+    .features .cards {
         flex-direction: column;
     }
-    .features .card .lomgdisc p{
+
+    /* Decreasing the font size of the description in the individual card in the features section */
+    .features .card .lomgdisc p {
         font-size: 0.9rem;
     }
-    .features .card .lomghead h3{
+
+    /* Decreasing the font size of the heading in the individual card in the features section */
+    .features .card .lomghead h3 {
         font-size: 1rem;
     }
-    .features .card .lomgo img{
+
+    /* Decreasing the size of the logo in the individual card in the features section */
+    .features .card .lomgo img {
         height: auto;
         width: 30px;
     }
 }
 
-.footer{
+/* Styling for the footer section */
+.footer {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 5% 10%;
-    background-color: #AB77D0;
-}
-.footer p{
-    font-size: 1.5rem;
-    font-family: 'Open Sans', sans-serif;
+    background-color: #ab77d0;
 }
 
-@media screen and (max-width: 500px){
-    .footer p{
+/* Styling for the text in the footer section */
+.footer p {
+    font-size: 1.5rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Media Query for very small screens */
+@media screen and (max-width: 500px) {
+
+    /* Decreasing the font size of the text in the footer section */
+    .footer p {
         font-size: 1.2rem;
     }
 }
 
-@media screen and (max-width: 400px){
-    .footer p{
+/* Media Query for extremely small screens */
+@media screen and (max-width: 400px) {
+
+    /* Decreasing the font size of the text in the footer section */
+    .footer p {
         font-size: 1rem;
+    }
+}
+
+/* Media Query for narrow screens */
+@media screen and (max-width: 330px) {
+
+    /* Decreasing the font size of the heading in the about section */
+    .about .text h1 {
+        font-size: 2rem;
+    }
+
+    /* Decreasing the font size of the description in the about section */
+    .about .description p {
+        font-size: 0.7rem;
     }
 }

@@ -1,10 +1,13 @@
+/* Set margin, padding, and box-sizing for all elements */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Set the properties for the body element */
 body {
+    /* Set the background color to a gradient */
     /* #363532, rgb(88, 111, 112) */
     align-items: center;
     display: flex;
@@ -14,7 +17,7 @@ body {
     padding-top: 3%;
 }
 
-/* Body light or darker themes */
+/* Set the properties for the standard, light, and darker themes */
 .standard {
     background-image: linear-gradient(100deg, #b459c7, blueviolet);
     color: #ffdfdb;
@@ -34,6 +37,7 @@ body {
     transition: 0.3s linear;
 }
 
+/* Set the properties for the header, form, and datetime elements */
 #header,
 #form,
 #datetime {
@@ -42,6 +46,7 @@ body {
     width: 100%;
 }
 
+/* Set the properties for the header element */
 #header {
     align-items: center;
     display: flex;
@@ -52,7 +57,7 @@ body {
     width: 100%;
 }
 
-/* Theme buttons div */
+/* Set the properties for the theme selector buttons */
 .flexrow-container {
     align-items: center;
     align-self: flex-end;
@@ -79,6 +84,7 @@ body {
     transform: scale(0.95);
 }
 
+/* Set the properties for each theme's button */
 .standard-theme {
     background-image: linear-gradient(100deg, #b459c7, blueviolet);
 }
@@ -91,7 +97,7 @@ body {
     background-image: linear-gradient(100deg, #001214, #001f29);
 }
 
-/* Animation */
+/* Set the properties for the title animation */
 #title {
     border-right: solid 3px rgba(0, 0, 0, 0.75);
     white-space: pre;
@@ -109,7 +115,7 @@ body {
     font-weight: 400;
 }
 
-
+/* Set the properties for the form element */
 form {
     display: flex;
     font-size: 1.7rem;
@@ -119,6 +125,7 @@ form {
     width: 100%;
 }
 
+/* Set the properties for the form input element */
 form input {
     padding: 10px;
     font-size: 17px;
@@ -132,7 +139,7 @@ form input {
     width: 100%;
 }
 
-/* Input themes */
+/* Set the properties for each theme's input element */
 form input.standard-input {
     background-color: #181a1a;
     color: rgb(247, 226, 223);
