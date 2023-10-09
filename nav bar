@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    *{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightgrey;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #1876f2;
+    padding: 5px 5%;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+}
+
+.logo{
+    width: 160px;
+    margin-right: 45px;
+}
+.nav-left{
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-left ul li{
+    list-style: none;
+display: inline-block;
+}
+
+.nav-left ul li img{
+    width: 28px;
+    margin: 0 15px;
+}
+
+/*yaha se ab hum nav bar mai right side ka bana rahe hai */
+
+.nav-right{
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-user-icon{
+    margin-left:30px ;
+}
+
+.nav-user-icon img{
+    width: 40px;
+    border-radius: 50%;
+    cursor:pointer;
+
+}
+
+.search-box{
+    background: #efefef  ;
+    width: 350px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.search-box img{
+    width: 18px;
+
+}
+
+.search-box input{
+    width: 100%;
+    background: transparent;
+    padding: 10px;
+    outline: none;
+    border: 0;
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><img src="images/notification.png" alt=""></li>
+                <li><img src="images/inbox.png" alt=""></li> 
+                <li><img src="images/video.png" alt=""></li>
+            </ul>
+        </div>
+    
+        <div class="nav-right">
+            <div class="search-box">
+                <img src="images/search.png" >
+                <input type="text"  placeholder="search">
+            </div>
+            <div class="nav-user-icon online">
+                <img src="images/profile-pic.png" alt="">
+            </div>
+        </div>
+    </nav>
+</body>
+</html>
