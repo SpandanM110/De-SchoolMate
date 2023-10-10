@@ -5,10 +5,13 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* Setting smooth scroll behavior for the HTML element */
-html {
+html,body {
+    height: 100%;
+    width: 100%;
     scroll-behavior: smooth;
 }
 
@@ -26,8 +29,8 @@ body::-webkit-scrollbar {
     background: url(../Media/unsplash_EaFX0kRvXT8.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100vh;
-    background-color: aliceblue;
-    height: 100vh;
+    background-color: rgb(172, 209, 243);
+    min-height: 100vh;
     width: 100%;
 }
 
@@ -53,16 +56,24 @@ body::-webkit-scrollbar {
 
 /* Styling for the navigation bar */
 .navbar {
-    position: absolute;
-    top: 0;
-    margin-top: 2%;
+    top: 0px;
+    position:absolute;
+    height: 80px;
+    width: 100%;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Styling for the navigation links */
 .navwap {
     display: flex;
-    flex-direction: row;
-    gap: 120vh;
+    align-items: center;
+    justify-content: center;
+    gap: 100vh;
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 /* Media Query for smaller screens */
@@ -132,7 +143,7 @@ body::-webkit-scrollbar {
 
 /* Styling for the title in the about section */
 .about .text h1 {
-    color: #540678;
+    color: #000000;
     font-size: 3rem;
     margin-bottom: 10%;
     font-family: "Open Sans", sans-serif;
