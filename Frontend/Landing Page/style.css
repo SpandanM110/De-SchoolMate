@@ -252,7 +252,7 @@ body::-webkit-scrollbar {
 
 /* Styling for the heading in the features section */
 .features .heading h1 {
-    color: #540678;
+    color: #020102;
     margin-bottom: 15%;
     font-size: 3rem;
 }
@@ -265,6 +265,10 @@ body::-webkit-scrollbar {
 /* Styling for the description in the individual card in the features section */
 .features .card .lomgdisc p {
     margin-bottom: 10%;
+}
+.features .card:hover{
+    background-color:#f42f2f ;
+    transition: 0.5s;
 }
 
 /* Media Query for smaller screens */
