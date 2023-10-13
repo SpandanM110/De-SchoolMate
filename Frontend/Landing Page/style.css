@@ -33,7 +33,9 @@ body::-webkit-scrollbar {
     align-items: center;
     background: url(../Media/unsplash_EaFX0kRvXT8.jpg);
     background-repeat: no-repeat;
-    background-size: 100% 100vh;
+    background-size: cover;
+    background-image: url(/De-SchoolMate/Images/pexels-kobe-1516440.jpg);
+    object-fit: cover;
     background-color: rgb(172, 209, 243);
     min-height: 100vh;
     width: 100%;
