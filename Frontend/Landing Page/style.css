@@ -1,362 +1,394 @@
 /* Importing Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Poppins:wght@300&family=Roboto:wght@700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Playfair Display', serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Playfair Display", serif;
 }
 /* Setting default margin and padding to 0 */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Setting smooth scroll behavior for the HTML element */
-html,body {
-    height: 100%;
-    width: 100%;
-    scroll-behavior: smooth;
+html,
+body {
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
 }
 
 /* Hiding the scrollbar */
 body::-webkit-scrollbar {
-    display: none;
+  display: none;
+}
+
+.navbar button {
+  background-color: #bd78ef;
+  border: none;
+  color: black;
+  padding: 0.5rem 1.25rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0.3rem 0.15rem;
+  cursor: pointer;
+  border-radius: 1.25rem;
+  font-family: "poppins";
+  font-weight: 600;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+button:hover {
+  background-color: rgb(183, 0, 255);
+  color: white;
 }
 
 /* Styling for the landing section */
 .land {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: url(../Media/unsplash_EaFX0kRvXT8.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(/De-SchoolMate/Images/pexels-kobe-1516440.jpg);
-    object-fit: cover;
-    background-color: rgb(172, 209, 243);
-    min-height: 100vh;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url(../Media/unsplash_EaFX0kRvXT8.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(/De-SchoolMate/Images/pexels-kobe-1516440.jpg);
+  object-fit: cover;
+  background-color: rgb(172, 209, 243);
+  min-height: 100vh;
+  width: 100%;
 }
 
 /* Styling for the title in the landing section */
 .land .title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: "Roboto", sans-serif;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Playfair Display', serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+
+  /* font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Playfair Display", serif; */
 }
 
 /* Styling for the main title in the landing section */
-.land .title h1 {
-    opacity: 80%;
-    font-size: 5rem;
+.land .title h1,
+span {
+  opacity: 80%;
+  font-size: 5rem;
 }
 
 /* Styling for the subtitle in the landing section */
 .land .title h3 {
-    opacity: 90%;
-    font-size: 1.6rem;
+  opacity: 90%;
+  font-size: 1.6rem;
 }
 
 /* Styling for the navigation bar */
 .navbar {
-    top: 0px;
-    position:absolute;
-    height: 80px;
-    width: 100%;
-    background-color: #000000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  top: 0px;
+  position: absolute;
+  height: 80px;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Styling for the navigation links */
 .navwap {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 100vh;
-    font-size: 1rem;
-    font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 115vh;
+  font-size: 1rem;
+  font-weight: 480;
+  margin-top: 2rem;
 }
 
 /* Media Query for smaller screens */
 @media screen and (max-width: 1000px) {
-    .navwap {
-        gap: 100vh;
-    }
+  .navwap {
+    gap: 100vh;
+  }
 }
 
 /* Media Query for even smaller screens */
 @media screen and (max-width: 900px) {
-    .navwap {
-        gap: 80vh;
-    }
+  .navwap {
+    gap: 80vh;
+  }
 }
 
 /* Styling for the functional links */
 .funcs {
-    float: left;
-    display: flex;
-    flex-direction: row;
-    gap: 100%;
-    font-family: "Poppins", sans-serif;
-    font-weight: bold;
+  float: left;
+  display: flex;
+  flex-direction: row;
+  gap: 100%;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.navbar a {
+  box-shadow: inset 0 0 0 0 #bd78ef;
+  text-decoration: none;
+  color: black;
+  margin: 0 -0.25rem;
+  padding: 0 0.25rem;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.navbar a:hover {
+  box-shadow: inset 100px 0 0 0 #bd78ef;
+  color: white;
 }
 
 /* Media Query for smaller screens */
 @media screen and (max-width: 900px) {
-    .funcs {
-        gap: 80%;
-    }
+  .funcs {
+    gap: 80%;
+  }
 }
 
 /* Media Query for even smaller screens */
 @media screen and (max-width: 800px) {
-    .navwap {
-        gap: 40vh;
-    }
+  .navwap {
+    gap: 40vh;
+  }
 
-    .funcs {
-        gap: 40%;
-    }
+  .funcs {
+    gap: 40%;
+  }
 
-    /* Styling for the main title in the landing section on smaller screens */
-    .land .title h1 {
-        font-size: 3rem;
-    }
+  /* Styling for the main title in the landing section on smaller screens */
+  .land .title h1 {
+    font-size: 3rem;
+  }
 
-    /* Styling for the subtitle in the landing section on smaller screens */
-    .land .title h3 {
-        font-size: 1.2rem;
-    }
+  /* Styling for the subtitle in the landing section on smaller screens */
+  .land .title h3 {
+    font-size: 1.2rem;
+  }
 }
 
 /* Styling for the about section */
 .about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #e2dff4;
-    padding-top: 10%;
-    padding-left: 20%;
-    padding-right: 20%;
-    padding-bottom: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e2dff4;
+  padding-top: 10%;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 10%;
 }
 
 /* Styling for the title in the about section */
 .about .text h1 {
-    color: #000000;
-    font-size: 3rem;
-    margin-bottom: 10%;
-    font-family: "Open Sans", sans-serif;
+  color: #000000;
+  font-size: 3rem;
+  margin-bottom: 10%;
+  font-family: "Open Sans", sans-serif;
 }
 
 /* Styling for the description in the about section */
 .about .description p {
-    font-size: 1.2rem;
-    margin-bottom: 10%;
-    font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  margin-bottom: 10%;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Media Query for smaller screens */
 @media screen and (max-width: 580px) {
+  /* Decreasing the font size of the title in the about section */
+  .about .text h1 {
+    font-size: 2.2rem;
+  }
 
-    /* Decreasing the font size of the title in the about section */
-    .about .text h1 {
-        font-size: 2.2rem;
-    }
-
-    /* Decreasing the font size of the description in the about section */
-    .about .description p {
-        font-size: 0.8rem;
-    }
+  /* Decreasing the font size of the description in the about section */
+  .about .description p {
+    font-size: 0.8rem;
+  }
 }
 
 /* Media Query for even smaller screens */
 @media screen and (max-width: 580px) {
+  /* Decreasing the font size of the title in the about section */
+  .about .text h1 {
+    font-size: 2.1rem;
+  }
 
-    /* Decreasing the font size of the title in the about section */
-    .about .text h1 {
-        font-size: 2.1rem;
-    }
-
-    /* Decreasing the font size of the description in the about section */
-    .about .description p {
-        font-size: 0.7rem;
-    }
+  /* Decreasing the font size of the description in the about section */
+  .about .description p {
+    font-size: 0.7rem;
+  }
 }
 
 @media screen and (max-width: 330px) {
-    .about .text h1 {
-        font-size: 2rem;
-    }
+  .about .text h1 {
+    font-size: 2rem;
+  }
 
-    .about .description p {
-        font-size: 0.7rem;
-    }
+  .about .description p {
+    font-size: 0.7rem;
+  }
 }
 
 /* Styling for the features section */
 .features {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: justify;
-    background-color: #bd48f4;
-    padding-top: 10%;
-    padding-left: 20%;
-    padding-right: 20%;
-    padding-bottom: 10%;
-    font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  background-color: #bd48f4;
+  padding-top: 10%;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 10%;
+  font-family: "Open Sans", sans-serif;
 }
 
 /* Styling for the cards in the features section */
 .features .cards {
-    display: flex;
-    flex-direction: row;
-    gap: 35px;
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
 }
 
 /* Styling for the individual card in the features section */
 .features .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background-color: #d9d9d9;
-    opacity: 80%;
-    border-radius: 25px;
-    padding: 5% 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #d9d9d9;
+  opacity: 80%;
+  border-radius: 25px;
+  padding: 5% 5%;
 }
 
 /* Styling for the logo in the individual card in the features section */
 .features .card .lomgo img {
-    height: auto;
-    width: 50px;
+  height: auto;
+  width: 50px;
 }
 
 /* Styling for the logo container in the individual card in the features section */
 .features .card .lomgo {
-    background-color: #d09af7;
-    border-radius: 50px;
-    border: 0px;
-    padding: 5% 5%;
-    margin-top: 15%;
+  background-color: #d09af7;
+  border-radius: 50px;
+  border: 0px;
+  padding: 5% 5%;
+  margin-top: 15%;
 }
 
 /* Styling for the heading in the features section */
 .features .heading h1 {
-    color: #540678;
-    margin-bottom: 15%;
-    font-size: 3rem;
+  color: #540678;
+  margin-bottom: 15%;
+  font-size: 3rem;
 }
 
 /* Styling for the heading in the individual card in the features section */
 .features .card .lomghead h3 {
-    margin: 15% 0;
+  margin: 15% 0;
 }
 
 /* Styling for the description in the individual card in the features section */
 .features .card .lomgdisc p {
-    margin-bottom: 10%;
+  margin-bottom: 10%;
 }
 
 /* Media Query for smaller screens */
 @media screen and (max-width: 1000px) {
+  /* Decreasing the font size of the description in the individual card in the features section */
+  .features .card .lomgdisc p {
+    font-size: 0.7rem;
+  }
 
-    /* Decreasing the font size of the description in the individual card in the features section */
-    .features .card .lomgdisc p {
-        font-size: 0.7rem;
-    }
+  /* Decreasing the font size of the heading in the individual card in the features section */
+  .features .card .lomghead h3 {
+    font-size: 0.9rem;
+  }
 
-    /* Decreasing the font size of the heading in the individual card in the features section */
-    .features .card .lomghead h3 {
-        font-size: 0.9rem;
-    }
-
-    /* Decreasing the size of the logo in the individual card in the features section */
-    .features .card .lomgo img {
-        height: auto;
-        width: 30px;
-    }
+  /* Decreasing the size of the logo in the individual card in the features section */
+  .features .card .lomgo img {
+    height: auto;
+    width: 30px;
+  }
 }
 
 /* Media Query for even smaller screens */
 @media screen and (max-width: 800px) {
+  /* Changing the flex direction of the cards in the features section */
+  .features .cards {
+    flex-direction: column;
+  }
 
-    /* Changing the flex direction of the cards in the features section */
-    .features .cards {
-        flex-direction: column;
-    }
+  /* Decreasing the font size of the description in the individual card in the features section */
+  .features .card .lomgdisc p {
+    font-size: 0.9rem;
+  }
 
-    /* Decreasing the font size of the description in the individual card in the features section */
-    .features .card .lomgdisc p {
-        font-size: 0.9rem;
-    }
+  /* Decreasing the font size of the heading in the individual card in the features section */
+  .features .card .lomghead h3 {
+    font-size: 1rem;
+  }
 
-    /* Decreasing the font size of the heading in the individual card in the features section */
-    .features .card .lomghead h3 {
-        font-size: 1rem;
-    }
-
-    /* Decreasing the size of the logo in the individual card in the features section */
-    .features .card .lomgo img {
-        height: auto;
-        width: 30px;
-    }
+  /* Decreasing the size of the logo in the individual card in the features section */
+  .features .card .lomgo img {
+    height: auto;
+    width: 30px;
+  }
 }
 
 /* Styling for the footer section */
 .footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5% 10%;
-    background-color: #ab77d0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 10%;
+  background-color: #ab77d0;
 }
 
 /* Styling for the text in the footer section */
 .footer p {
-    font-size: 1.5rem;
-    font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+  font-family: "Open Sans", sans-serif;
 }
 
 /* Media Query for very small screens */
 @media screen and (max-width: 500px) {
-
-    /* Decreasing the font size of the text in the footer section */
-    .footer p {
-        font-size: 1.2rem;
-    }
+  /* Decreasing the font size of the text in the footer section */
+  .footer p {
+    font-size: 1.2rem;
+  }
 }
 
 /* Media Query for extremely small screens */
 @media screen and (max-width: 400px) {
-
-    /* Decreasing the font size of the text in the footer section */
-    .footer p {
-        font-size: 1rem;
-    }
+  /* Decreasing the font size of the text in the footer section */
+  .footer p {
+    font-size: 1rem;
+  }
 }
 
 /* Media Query for narrow screens */
 @media screen and (max-width: 330px) {
+  /* Decreasing the font size of the heading in the about section */
+  .about .text h1 {
+    font-size: 2rem;
+  }
 
-    /* Decreasing the font size of the heading in the about section */
-    .about .text h1 {
-        font-size: 2rem;
-    }
-
-    /* Decreasing the font size of the description in the about section */
-    .about .description p {
-        font-size: 0.7rem;
-    }
+  /* Decreasing the font size of the description in the about section */
+  .about .description p {
+    font-size: 0.7rem;
+  }
 }
