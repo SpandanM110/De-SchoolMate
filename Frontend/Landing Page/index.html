@@ -1,8 +1,8 @@
 <!-- The [DOCTYPE declaration](poe://www.poe.com/_api/key_phrase?phrase=DOCTYPE%20declaration&prompt=Tell%20me%20more%20about%20DOCTYPE%20declaration.) specifies the version of HTML used in the document. -->
 <!DOCTYPE html>
 <html lang="en">
-
-<head> <!-- The meta tags provide metadata about the document. -->
+  <head>
+    <!-- The meta tags provide metadata about the document. -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,96 +12,126 @@
     <link rel="stylesheet" href="style.css" />
     <!-- The link element specifies the relationship between the document and an external icon file. -->
     <link rel="icon" href="../Media/DSM.svg" type="image/x-icon" />
-</head>
+  </head>
 
-<body> <!-- The div element with class "land" contains the top section of the page. -->
-    <div class="land" id="land"> <!-- The div element with class "navbar" contains the navigation bar of the page. -->
-        <div class="navbar">
-            <div class="navwap"> <!-- The div element with class "funcs" contains the navigation links of the page. -->
-                <div class="funcs"> <a href="#land">Home</a> <a href="#about">About</a> <a href="#features">Features</a>
-                </div> <!-- The div element with class "login" contains the login button of the page. -->
-                <div class="login"><button onclick="login()" type="button">Open App</button></div>
-            </div>
-        </div> <!-- The div element with class "title" contains the main title of the page. -->
-        <div class="title">
-            <h1>De <span style="color: #5a01b3">SchoolMate</span></h1>
-            <h3>A complete solution for your daily studies</h3>
+  <body>
+    <!-- The div element with class "land" contains the top section of the page. -->
+    <div class="land" id="land">
+      <!-- The div element with class "navbar" contains the navigation bar of the page. -->
+      <div class="navbar">
+        <div class="navwap">
+          <!-- The div element with class "funcs" contains the navigation links of the page. -->
+          <div class="funcs">
+            <a href="#land">Home</a> <a href="#about">About</a>
+            <a href="#features">Features</a>
+          </div>
+          <!-- The div element with class "login" contains the login button of the page. -->
+          <div class="login">
+            <button onclick="login()" type="button" class="button-9">
+              Open App
+            </button>
+          </div>
         </div>
+      </div>
+      <!-- The div element with class "title" contains the main title of the page. -->
+      <div class="title">
+        <h1>De <span style="color: #5a01b3">SchoolMate</span></h1>
+        <h3>A complete solution for your daily studies</h3>
+      </div>
     </div>
 
     <!-- The div element with class "temp" contains the main content of the page. -->
     <div class="temp" id="about">
-        <!-- The div element with class "about" contains the "About Us" section of the page. -->
-        <div class="about">
-            <!-- The div element with class "text" contains the title of the "About Us" section. -->
-            <div class="text">
-                <h1>About Us</h1>
-            </div>
-            <!-- The div element with class "description" contains the description of the "About Us" section. -->
-            <div class="description">
-                <p>Our website is a powerful productivity and organization tool designed specifically for students. With
-                    a wide range of features such as a Pomodoro timer, note making, todos list, and more, our website is
-                    a one-stop-shop for students to manage their daily activities and improve their productivity.
-                    <br><br>Our website is equipped with a variety of features such as a calendar, goal-setting, and
-                    task
-                    prioritization tools, which help students to plan their study schedule efficiently and effectively.
-                    In addition, we offer a comprehensive library of educational resources such as online courses,
-                    tutorial videos, and study guides, which are designed to help students achieve their academic goals
-                    and excel in their studies.
-                </p>
-            </div>
+      <!-- The div element with class "about" contains the "About Us" section of the page. -->
+      <div class="about">
+        <!-- The div element with class "text" contains the title of the "About Us" section. -->
+        <div class="text">
+          <h1>About Us</h1>
         </div>
-        <!-- The div element with class "features" contains the "Features" section of the page. -->
-        <div class="features" id="features">
-            <!-- The div element with class "heading" contains the title of the "Features" section. -->
-            <div class="heading">
-                <h1>Features</h1>
-            </div>
-            <!-- The div element with class "cards" contains the feature cards of the "Features" section. -->
-            <div class="cards">
-                <!-- The div element with class "card" contains the first feature card. -->
-                <div class="card">
-                    <div class="lomgo"><img src="../Media/book.svg" alt="" srcset=""></div>
-                    <div class="lomghead">
-                        <h3>Book Search</h3>
-                    </div>
-                    <div class="lomgdisc">
-                        <p style="text-align: justify;">A book search feature on a website is a tool that allows users
-                            to search for books by various criteria such as title, author, subject, or keyword.</p>
-                    </div>
-                </div>
-                <!-- The div element with class "card" contains the second feature card. -->
-                <div class="card">
-                    <div class="lomgo"><img src="../Media/calender.svg" alt=""></div>
-                    <div class="lomghead">
-                        <h3>Calender</h3>
-                    </div>
-                    <div class="lomgdisc">
-                        <p>A calendar feature on a website is a tool that allows users to
-                            view and organize events, tasks, and appointments on a digital
-                            calendar.</p>
-                    </div>
-                </div>
-                <!-- The div element with class "card" contains the third feature card. -->
-                <div class="card">
-                    <div class="lomgo"><img src="../Media/Group 1.svg" alt="" srcset=""></div>
-                    <div class="lomghead">
-                        <h3>Note Making</h3>
-                    </div>
-                    <div class="lomgdisc">
-                        <p style="text-align: justify;">A note making feature on a website is a tool that allows users
-                            to create and store short text-based notes or memos. </p>
-                    </div>
-                </div>
-            </div>
+        <!-- The div element with class "description" contains the description of the "About Us" section. -->
+        <div class="description">
+          <p>
+            Our website is a powerful productivity and organization tool
+            designed specifically for students. With a wide range of features
+            such as a Pomodoro timer, note making, todos list, and more, our
+            website is a one-stop-shop for students to manage their daily
+            activities and improve their productivity. <br /><br />Our website
+            is equipped with a variety of features such as a calendar,
+            goal-setting, and task prioritization tools, which help students to
+            plan their study schedule efficiently and effectively. In addition,
+            we offer a comprehensive library of educational resources such as
+            online courses, tutorial videos, and study guides, which are
+            designed to help students achieve their academic goals and excel in
+            their studies.
+          </p>
         </div>
-        <!-- The div element with class "footer" contains the footer of the page. -->
-        <div class="footer">
-            <p>Copyright © De SchoolMate <script>document.write(new Date().getFullYear());</script></p>
+      </div>
+      <!-- The div element with class "features" contains the "Features" section of the page. -->
+      <div class="features" id="features">
+        <!-- The div element with class "heading" contains the title of the "Features" section. -->
+        <div class="heading">
+          <h1>Features</h1>
         </div>
+        <!-- The div element with class "cards" contains the feature cards of the "Features" section. -->
+        <div class="cards">
+          <!-- The div element with class "card" contains the first feature card. -->
+          <div class="card">
+            <div class="lomgo">
+              <img src="../Media/book.svg" alt="" srcset="" />
+            </div>
+            <div class="lomghead">
+              <h3>Book Search</h3>
+            </div>
+            <div class="lomgdisc">
+              <p style="text-align: justify">
+                A book search feature on a website is a tool that allows users
+                to search for books by various criteria such as title, author,
+                subject, or keyword.
+              </p>
+            </div>
+          </div>
+          <!-- The div element with class "card" contains the second feature card. -->
+          <div class="card">
+            <div class="lomgo"><img src="../Media/calender.svg" alt="" /></div>
+            <div class="lomghead">
+              <h3>Calender</h3>
+            </div>
+            <div class="lomgdisc">
+              <p>
+                A calendar feature on a website is a tool that allows users to
+                view and organize events, tasks, and appointments on a digital
+                calendar.
+              </p>
+            </div>
+          </div>
+          <!-- The div element with class "card" contains the third feature card. -->
+          <div class="card">
+            <div class="lomgo">
+              <img src="../Media/Group 1.svg" alt="" srcset="" />
+            </div>
+            <div class="lomghead">
+              <h3>Note Making</h3>
+            </div>
+            <div class="lomgdisc">
+              <p style="text-align: justify">
+                A note making feature on a website is a tool that allows users
+                to create and store short text-based notes or memos.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- The div element with class "footer" contains the footer of the page. -->
+      <div class="footer">
+        <p>
+          Copyright © De SchoolMate
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+        </p>
+      </div>
     </div>
     <!-- The script element specifies a script to be executed on the page. -->
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
