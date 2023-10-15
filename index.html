@@ -18,16 +18,29 @@
     <link rel="icon" href="./Frontend/Media/DSM.svg" type="image/x-icon" />
 </head>
 
-<body> <!-- The body section contains the content of the website -->
-    <div class="land" id="land">
-        <!-- This div contains the landing page's header, including the navbar and login button -->
-        <div class="navbar">
-            <div class="navwap"> <!-- This div contains links to different sections of the page -->
-                <div class="funcs"> <a href="#land">Home</a> <a href="#about">About</a> <a href="#features">Features</a>
-                </div> <!-- This div contains a login button that opens the app -->
-                <div class="login"><button onclick="login()" type="button">Open App</button></div>
+    <!-- The body section contains the content of the website -->
+<body> 
+
+    <!-- This div contains the landing page's header, including the navbar and login button -->
+    <nav class="navbar">
+        <div class="navwap"> 
+            <!-- This div contains links to different sections of the page -->
+            <div class="funcs">
+                <ul>
+                    <li><a href="#land">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#features">Features</a></li>
+                </ul>  
+            </div> 
+            <!-- This div contains a login button that opens the app -->
+            <div class="login">
+                <button onclick="login()" type="button">Open App</button>
             </div>
-        </div> <!-- This div contains the title and subtitle of the landing page -->
+        </div>
+    </nav> 
+
+    <div class="land" id="land">
+        <!-- This div contains the title and subtitle of the landing page -->
         <div class="title">
             <h1>De <span style="color: #ffffff">SchoolMate</span></h1>
             <h3>A complete solution for your daily studies</h3>
