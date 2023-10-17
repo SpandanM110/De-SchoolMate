@@ -246,7 +246,7 @@ span {
   justify-content: center;
   align-items: center;
   text-align: justify;
-  background-color: #bd48f4;
+  background-image: linear-gradient(to right bottom, #080b51, #870057, #d13034, #e09100, #a8eb12);
   padding-top: 10%;
   padding-left: 20%;
   padding-right: 20%;
@@ -281,16 +281,19 @@ span {
 
 /* Styling for the logo container in the individual card in the features section */
 .features .card .lomgo {
-  background-color: #d09af7;
+  background-image: linear-gradient(to bottom, #080b51, #870057, #d13034, #e09100);
+
   border-radius: 50px;
-  border: 0px;
+  border-top: solid 5px white;
+  border-left: solid 5px white;
+  border-right: solid 5px black;
+  border-bottom: solid 5px black;
   padding: 5% 5%;
   margin-top: 15%;
 }
-
 /* Styling for the heading in the features section */
 .features .heading h1 {
-  color: #540678;
+  color: white;
   margin-bottom: 15%;
   font-size: 3rem;
 }
@@ -299,7 +302,12 @@ span {
 .features .card .lomghead h3 {
   margin: 15% 0;
 }
+.features .lomghead span{
+  font-size: 1.3rem;
+  color: blueviolet;
+  opacity: 100% !important;
 
+}
 /* Styling for the description in the individual card in the features section */
 .features .card .lomgdisc p {
   margin-bottom: 10%;
