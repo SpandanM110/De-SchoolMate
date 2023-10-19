@@ -1,4 +1,8 @@
-<!-- This is an [HTML file](poe://www.poe.com/_api/key_phrase?phrase=HTML%20file&prompt=Tell%20me%20more%20about%20HTML%20file.) that creates a [landing page](poe://www.poe.com/_api/key_phrase?phrase=landing%20page&prompt=Tell%20me%20more%20about%20landing%20page.) for a website called De SchoolMate -->
+<!--This is an[HTML
+    file](poe://www.poe.com/_api/key_phrase?phrase=HTML%20file&prompt=Tell%20me%20more%20about%20HTML%20file.) that
+    creates a [landing
+    page](poe://www.poe.com/_api/key_phrase?phrase=landing%20page&prompt=Tell%20me%20more%20about%20landing%20page.) for
+    a website called De SchoolMate -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,32 +18,38 @@
 
     <!-- This link tag sets the website's favicon -->
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
-    
+
     <link rel="icon" href="./Frontend/Media/DSM.svg" type="image/x-icon" />
 </head>
 
-    <!-- The body section contains the content of the website -->
-<body> 
+<!-- The body section contains the content of the website -->
 
-    <!-- This div contains the landing page's header, including the navbar and login button -->
-    <nav class="navbar">
-        <div class="navwap"> 
-            <!-- This div contains links to different sections of the page -->
-            <div class="funcs">
-                <ul>
-                    <li><a href="#land">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#features">Features</a></li>
-                </ul>  
-            </div> 
-            <!-- This div contains a login button that opens the app -->
-            <div class="login">
-                <button onclick="login()" type="button">Open App</button>
-            </div>
+<body>
+    <!-- Navbar start -->
+    <nav class="navbar-scroll">
+        <p class="logo-text">De SchoolMate</p>
+        <ul class="desktop-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a class="button-link" target="_blank" href="./Frontend/Feature Menu/index.html">Open App</a></li>
+        </ul>
+        <ul class="menu-links menu-collapsed">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a class="button-link" target="_blank" href="./Frontend/Feature Menu/index.html">Open App</a></li>
+        </ul>
+        <!-- Mobile Menu Icons -->
+        <div class="mobile-menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
         </div>
-    </nav> 
+    </nav>
+    <!-- Navbar end -->
 
-    <div class="land" id="land">
+    <div class="land" id="home">
         <!-- This div contains the title and subtitle of the landing page -->
         <div class="title">
             <h1>De <span style="color: #ffffff">SchoolMate</span></h1>
@@ -55,14 +65,18 @@
             </div>
             <!-- This div contains a description of the website and its features -->
             <div class="description">
-                <p>Our website is a powerful productivity and organization tool designed specifically for students. With
-                    a wide range of features such as a Pomodoro timer, note making, todos list, and more, our website is
+                <p>Our website is a powerful productivity and organization tool designed specifically for students.
+                    With
+                    a wide range of features such as a Pomodoro timer, note making, todos list, and more, our
+                    website is
                     a one-stop-shop for students to manage their daily activities and improve their productivity.
                     <br><br>Our website is equipped with a variety of features such as a calendar, goal-setting, and
                     task
-                    prioritization tools, which help students to plan their study schedule efficiently and effectively.
+                    prioritization tools, which help students to plan their study schedule efficiently and
+                    effectively.
                     In addition, we offer a comprehensive library of educational resources such as online courses,
-                    tutorial videos, and study guides, which are designed to help students achieve their academic goals
+                    tutorial videos, and study guides, which are designed to help students achieve their academic
+                    goals
                     and excel in their studies.
                 </p>
             </div>
@@ -76,10 +90,11 @@
                 <div class="card">
                     <div class="lomgo"><img src="./Frontend/Media/open-book.png" alt="" srcset=""></div>
                     <div class="lomghead">
-                        <h3><span >Book</span> Search</h3>
+                        <h3><span>Book</span> Search</h3>
                     </div>
                     <div class="lomgdisc">
-                        <p style="text-align: justify;">A book search feature on a website is a tool that allows users
+                        <p style="text-align: justify;">A book search feature on a website is a tool that allows
+                            users
                             to search for books by various criteria such as title, author, subject, or keyword.</p>
                     </div>
 
@@ -90,18 +105,21 @@
                         <h3>Calender</h3>
                     </div>
                     <div class="lomgdisc">
-                        <p style="text-align: justify;">A calendar feature on a website is a tool that allows users to
+                        <p style="text-align: justify;">A calendar feature on a website is a tool that allows users
+                            to
                             view and organize events, tasks, and other appointments on a digital
                             calendar.</p>
                     </div>
                 </div>
                 <div class="card">
-                    <div class="lomgo"><img src="./Frontend/Media/notes.png" style="margin-left: 6px;" alt="" srcset=""></div>
+                    <div class="lomgo"><img src="./Frontend/Media/notes.png" style="margin-left: 6px;" alt="" srcset="">
+                    </div>
                     <div class="lomghead">
                         <h3>Note <span>Making</span></h3>
                     </div>
                     <div class="lomgdisc">
-                        <p style="text-align: justify;">A note making feature on a website is a tool that allows users
+                        <p style="text-align: justify;">A note making feature on a website is a tool that allows
+                            users
                             to create and store short text-based notes or memos. </p>
                     </div>
                 </div>
@@ -109,7 +127,9 @@
         </div>
         <!-- This div contains the footer of the landing page -->
         <div class="footer">
-            <p>Copyright © De SchoolMate <script>document.write(new Date().getFullYear());</script></p>
+            <p>Copyright © De SchoolMate
+                <script>document.write(new Date().getFullYear());</script>
+            </p>
         </div>
     </div>
 
