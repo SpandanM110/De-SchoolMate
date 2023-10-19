@@ -38,7 +38,7 @@ nav {
   position: sticky;
   top: 0px;
   box-shadow: 1px 1px 1px 0 #969595;
-  background-color: transparent;
+  background-color: black;
   z-index: 99;
 }
 
@@ -73,7 +73,9 @@ nav ul li a {
 
 
 nav ul li a:hover {
-  color: #969595 !important;
+  color: #f8f3f3 !important;
+  font-size: larger;
+ 
 }
 
 .toggle-menu {
@@ -556,4 +558,9 @@ span {
   .about .description p {
     font-size: 0.7rem;
   }
+}
+.card:hover {
+  background-color: #b681df;
+  padding: 45px;
+  cursor: pointer;
 }
