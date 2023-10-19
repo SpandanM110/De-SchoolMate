@@ -5,7 +5,7 @@ function login() {
     window.open("./Frontend/Feature Menu/index.html")
 }
 
-// Menu toggle in Mobile view 
+// Menu toggle in Mobile view
 const mobileMenuIcon = document.querySelector(".mobile-menu-icon");
 const menuLinks = document.querySelector(".menu-links");
 
