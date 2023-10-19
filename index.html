@@ -11,33 +11,36 @@
     <!-- This link tag loads an external CSS file that styles the landing page -->
     <link rel="stylesheet" href="./Frontend/Landing Page/style.css" />
     <link rel="stylesheet" href="./smoothscroll.css" />
-
+    <!-- Importing Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- This link tag sets the website's favicon -->
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
-    
+
     <link rel="icon" href="./Frontend/Media/DSM.svg" type="image/x-icon" />
 </head>
 
-    <!-- The body section contains the content of the website -->
-<body> 
+<!-- The body section contains the content of the website -->
+
+<body>
 
     <!-- This div contains the landing page's header, including the navbar and login button -->
     <nav class="navbar">
-        <div class="navwap"> 
+        <div class="navwap">
             <!-- This div contains links to different sections of the page -->
             <div class="funcs">
                 <ul>
                     <li><a href="#land">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#features">Features</a></li>
-                </ul>  
-            </div> 
+                </ul>
+            </div>
             <!-- This div contains a login button that opens the app -->
             <div class="login">
                 <button onclick="login()" type="button">Open App</button>
             </div>
         </div>
-    </nav> 
+    </nav>
 
     <div class="land" id="land">
         <!-- This div contains the title and subtitle of the landing page -->
@@ -51,20 +54,34 @@
     <div class="temp" id="about">
         <div class="about">
             <div class="text">
-                <h1>About Us</h1>
+                <h1><span>About</span> Us</h1>
             </div>
             <!-- This div contains a description of the website and its features -->
+
             <div class="description">
-                <p>Our website is a powerful productivity and organization tool designed specifically for students. With
-                    a wide range of features such as a Pomodoro timer, note making, todos list, and more, our website is
-                    a one-stop-shop for students to manage their daily activities and improve their productivity.
-                    <br><br>Our website is equipped with a variety of features such as a calendar, goal-setting, and
-                    task
-                    prioritization tools, which help students to plan their study schedule efficiently and effectively.
-                    In addition, we offer a comprehensive library of educational resources such as online courses,
-                    tutorial videos, and study guides, which are designed to help students achieve their academic goals
-                    and excel in their studies.
-                </p>
+                <div class="row">
+                    <div class="col-lg-6 col-xl-6"><img  src="/Frontend/Media/Study.jpg" width="100%" height="100%"></div>
+                    <div class="col-lg-6 col-xl-6" >
+                        <p>Our website is a powerful productivity and organization tool designed specifically for
+                            students.
+                            With
+                            a wide range of features such as a Pomodoro timer, note making, todos list, and more, our
+                            website is
+                            a one-stop-shop for students to manage their daily activities and improve their
+                            productivity.
+                            Our website is equipped with a variety of features such as a calendar, goal-setting, and
+                            task
+                            prioritization tools, which help students to plan their study schedule efficiently and
+                            effectively.
+                            In addition, we offer a comprehensive library of educational resources such as online
+                            courses,
+                            tutorial videos, and study guides, which are designed to help students achieve their
+                            academic
+                            goals
+                            and excel in their studies.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- This div contains information about the website's features, including three cards with icons and descriptions -->
@@ -76,7 +93,7 @@
                 <div class="card">
                     <div class="lomgo"><img src="./Frontend/Media/open-book.png" alt="" srcset=""></div>
                     <div class="lomghead">
-                        <h3><span >Book</span> Search</h3>
+                        <h3><span>Book</span> Search</h3>
                     </div>
                     <div class="lomgdisc">
                         <p style="text-align: justify;">A book search feature on a website is a tool that allows users
@@ -96,7 +113,8 @@
                     </div>
                 </div>
                 <div class="card">
-                    <div class="lomgo"><img src="./Frontend/Media/notes.png" style="margin-left: 6px;" alt="" srcset=""></div>
+                    <div class="lomgo"><img src="./Frontend/Media/notes.png" style="margin-left: 6px;" alt="" srcset="">
+                    </div>
                     <div class="lomghead">
                         <h3>Note <span>Making</span></h3>
                     </div>
@@ -109,13 +127,20 @@
         </div>
         <!-- This div contains the footer of the landing page -->
         <div class="footer">
-            <p>Copyright © De SchoolMate <script>document.write(new Date().getFullYear());</script></p>
+            <p>Copyright © De SchoolMate
+                <script>document.write(new Date().getFullYear());</script>
+            </p>
         </div>
     </div>
 
     <!-- This script tag loads an external JavaScript file that contains a function to open the app -->
     <script src="./script.js"></script>
     <script src="./smoothscroll.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
