@@ -2,7 +2,7 @@
 
 // The logout function opens the Landing Page when called.
 function logout() {
-    window.open("../Landing Page/index.html");
+    window.open("../../index.html");
 }
 
 // The note function opens the Note making page when called.

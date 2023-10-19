@@ -38,7 +38,7 @@ body::-webkit-scrollbar {
 .top button {
     padding: 5px 20px;
     border-radius: 13px;
-    border: 0px;
+    border: 2px solid;
     font-family: "Poppins", sans-serif;
     font-weight: bold;
     background-color: #a45ceb;

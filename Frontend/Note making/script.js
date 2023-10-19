@@ -32,6 +32,11 @@ closeIcon.addEventListener("click", () => {
     document.querySelector("body").style.overflow = "auto";
 });
 
+// function to open index.html when home button is clicked
+function logout() {
+    window.open("../../index.html");
+}
+
 // Define a function to display all of the existing notes on the page
 function showNotes() {
     if (!notes) return;
