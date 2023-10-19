@@ -1,10 +1,13 @@
 /* Importing Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Poppins:wght@300&family=Roboto:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
+
 body {
   font-family: "Montserrat", sans-serif;
   font-family: "Playfair Display", serif;
+  background-image: linear-gradient(to right bottom, #080b51, #870057, #d13034, #e09100, #a8eb12);
 }
+
 /* Setting default margin and padding to 0 */
 * {
   margin: 0;
@@ -25,6 +28,120 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+/* Navbar start */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 24px;
+  height: 70px;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+  box-shadow: 1px 1px 1px 0 #969595;
+  background-color: transparent;
+  z-index: 99;
+}
+
+.logo-text {
+  cursor: pointer;
+  font-size: 32px;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  color: #fff;
+}
+
+nav ul li a {
+  text-decoration: none !important;
+  padding: 10px;
+  font-family: 'Montserrat';
+  color: #fff;
+}
+
+
+.button-link {
+  background-color: #303030;
+  color: #fff !important;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+
+nav ul li a:hover {
+  color: #969595 !important;
+}
+
+.toggle-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.toggle-menu span {
+  width: 30px;
+  height: 3px;
+  margin: 3px 0;
+}
+
+.menu-links,
+.mobile-menu-icon {
+  display: none;
+}
+
+@media(max-width: 768px) {
+  .mobile-menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: 0.4s;
+  }
+
+  .desktop-menu {
+    display: none;
+  }
+
+  .menu-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: -webkit-fill-available;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    overflow: hidden;
+    transition: max-height 1s ease -in;
+  }
+
+  .menu-links li a {
+    padding: 10px;
+  }
+
+  .menu-links li {
+    margin: 10px;
+  }
+
+  .menu-links.active {
+    max-height: 600px;
+  }
+
+  .menu-links.menu-collapsed {
+    max-height: 0;
+  }
+}
+
+/* Navbar end */
+
 .navbar button {
   /* background-color: #000000; */
   border: none;
@@ -42,6 +159,7 @@ body::-webkit-scrollbar {
   margin-bottom: 20px;
   font-size: 22px;
 }
+
 button:hover {
   background-color: powderblue;
   color: black;
@@ -106,7 +224,20 @@ span {
   font-size: 1.5rem;
   font-weight: 480;
   margin-top: 2rem;
-  
+
+}
+
+@media(max-width: 768px) {
+
+  .land.title h1,
+  span {
+    font-size: 2.4rem;
+  }
+
+  /* Styling for the subtitle in the landing section */
+  .land.title h3 {
+    font-size: 1.6rem;
+  }
 }
 
 /* Media Query for smaller screens */
@@ -124,7 +255,7 @@ span {
 }
 
 /* Styling for the functional links */
-.funcs ul{
+.funcs ul {
   float: left;
   display: flex;
   flex-direction: row;
@@ -135,19 +266,20 @@ span {
   list-style-type: none;
 }
 
-.funcs{
+.funcs {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   margin-bottom: 10px;
-  
+
 }
 
 
-#l1{
+#l1 {
   margin-right: 10px;
   /* border-radius: 1.25rem; */
-  
+
 }
-#l2{
+
+#l2 {
   margin-right: 10px;
   /* border-radius: 1.25rem; */
 }
@@ -159,13 +291,14 @@ span {
   color: rgb(255, 255, 255);
   margin: 0 -0.25rem;
   padding: 0rem 1rem;
-  transition:  background-color 0.2s linear, color 0.2s linear;
+  transition: background-color 0.2s linear, color 0.2s linear;
   /* transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out; */
 }
+
 .navbar a:hover {
   border-radius: 1.5rem;
   background-color: plum;
-  color:black;
+  color: black;
 }
 
 /* Media Query for smaller screens */
@@ -200,10 +333,7 @@ span {
   justify-content: center;
   align-items: center;
   background-color: #e2dff4;
-  padding-top: 10%;
-  padding-left: 20%;
-  padding-right: 20%;
-  padding-bottom: 10%;
+  padding: 10%;
 }
 
 /* Styling for the title in the about section */
@@ -223,6 +353,7 @@ span {
 
 /* Media Query for smaller screens */
 @media screen and (max-width: 580px) {
+
   /* Decreasing the font size of the title in the about section */
   .about .text h1 {
     font-size: 2.2rem;
@@ -236,6 +367,7 @@ span {
 
 /* Media Query for even smaller screens */
 @media screen and (max-width: 580px) {
+
   /* Decreasing the font size of the title in the about section */
   .about .text h1 {
     font-size: 2.1rem;
@@ -309,6 +441,7 @@ span {
   padding: 5% 5%;
   margin-top: 15%;
 }
+
 /* Styling for the heading in the features section */
 .features .heading h1 {
   color: white;
@@ -320,12 +453,14 @@ span {
 .features .card .lomghead h3 {
   margin: 15% 0;
 }
-.features .lomghead span{
+
+.features .lomghead span {
   font-size: 1.3rem;
   color: blueviolet;
   opacity: 100% !important;
 
 }
+
 /* Styling for the description in the individual card in the features section */
 .features .card .lomgdisc p {
   margin-bottom: 10%;
@@ -333,6 +468,7 @@ span {
 
 /* Media Query for smaller screens */
 @media screen and (max-width: 1000px) {
+
   /* Decreasing the font size of the description in the individual card in the features section */
   .features .card .lomgdisc p {
     font-size: 0.7rem;
@@ -352,6 +488,7 @@ span {
 
 /* Media Query for even smaller screens */
 @media screen and (max-width: 800px) {
+
   /* Changing the flex direction of the cards in the features section */
   .features .cards {
     flex-direction: column;
@@ -391,6 +528,7 @@ span {
 
 /* Media Query for very small screens */
 @media screen and (max-width: 500px) {
+
   /* Decreasing the font size of the text in the footer section */
   .footer p {
     font-size: 1.2rem;
@@ -399,6 +537,7 @@ span {
 
 /* Media Query for extremely small screens */
 @media screen and (max-width: 400px) {
+
   /* Decreasing the font size of the text in the footer section */
   .footer p {
     font-size: 1rem;
@@ -407,6 +546,7 @@ span {
 
 /* Media Query for narrow screens */
 @media screen and (max-width: 330px) {
+
   /* Decreasing the font size of the heading in the about section */
   .about .text h1 {
     font-size: 2rem;
