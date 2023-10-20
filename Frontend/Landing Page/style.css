@@ -334,8 +334,13 @@ span {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #e2dff4;
-  padding: 10%;
+  background-image: linear-gradient(to right bottom, #080b51, #870057, #d13034, #e09100, #a8eb12);
+  background-image: linear-gradient(to left top, #080b51, #870057, #d13034, #e09100, #a8eb12);
+
+  padding-top: 10%;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 10%;
 }
 
 /* Styling for the title in the about section */
@@ -347,10 +352,40 @@ span {
 }
 
 /* Styling for the description in the about section */
+.about{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.about h1{
+  color: #970c50 !important;
+}
+.about span{
+  font-size: 3rem;
+  color: white;
+}
+
+.description .row{
+  padding-top: 5%;
+  width: 100%;
+  height: 100%;
+}
+.about .description img{
+
+  border-top: solid black 5px;
+  border-left: solid black 5px;
+  border-right: solid white 5px;
+  border-bottom: solid white 5px;
+  border-radius: 10%;
+
+}
 .about .description p {
   font-size: 1.2rem;
   margin-bottom: 10%;
   font-family: "Poppins", sans-serif;
+  color: white;
+  text-align: justify;
+  margin-left: 5%;
+  margin-top: 2%;
 }
 
 /* Media Query for smaller screens */
