@@ -1,4 +1,7 @@
-https://github.com/srummanf/De-SchoolMate.git
+### Note Always Sync the branch whenever you contribute
+
+
+
 
 
 ## Contributing to De School Mate
