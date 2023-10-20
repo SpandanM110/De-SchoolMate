@@ -36,6 +36,10 @@ var weekdayShort = [
     "sat"
 ];
 
+function logout() {
+    window.open("../../index.html");
+}
+
 // Variable to keep track of the direction of the month change
 var monthDirection = 0;
 

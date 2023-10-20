@@ -39,6 +39,10 @@ savedTheme === null ?
 
 // Functions;
 
+function logout() {
+    window.open("../../index.html");
+}
+
 // Function to add a new to-do item
 function addToDo(event) {
     // Prevents form from submitting / Prevents form from relaoding;

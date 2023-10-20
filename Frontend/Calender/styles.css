@@ -15,6 +15,30 @@ html {
     perspective: 1000px; /* Set 3D perspective for the page */
 }
 
+/* The top section of the page consists of a button that is aligned to the right and has some margins.
+The button has some padding and border radius, and its font is bold and sans-serif.
+When the button is hovered over, its background color changes and the cursor turns to a pointer.
+*/ 
+.top {
+    text-align: right;
+    margin-top: 1%;
+    margin-right: 2%;
+}
+
+.top button {
+    padding: 5px 20px;
+    border-radius: 13px;
+    border: 2px solid ;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    background-color: #ad12f5;
+}
+
+.top button:hover {
+    background-color: #8216ee;
+    cursor: pointer;
+}
+
 /* Set styles for the main calendar container */
 .content-wrapper {
     position: absolute;
