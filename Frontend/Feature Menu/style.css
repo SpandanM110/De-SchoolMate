@@ -21,7 +21,8 @@ body::-webkit-scrollbar {
     The background color of the body is set to a light purple.
     */
 .body {
-    background-color: #d09af7;
+    /* background-color: #d09af7; */
+    background-image: linear-gradient(to right bottom, #080b51, #870057, #d13034, #e09100, #a8eb12);
 }
 
 /*
@@ -35,18 +36,23 @@ body::-webkit-scrollbar {
     margin-right: 1%;
 }
 
+
 .top button {
-    padding: 5px 20px;
-    border-radius: 13px;
-    border: 2px solid;
+    background-color: #303030;
+    color: #fff !important;
+    padding: 10px 40px;
+    border-radius: 20px; 
     font-family: "Poppins", sans-serif;
-    font-weight: bold;
-    background-color: #a45ceb;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    font-size: 18px;
 }
 
 .top button:hover {
     background-color: #8216ee;
     cursor: pointer;
+    transform: scale(1.1);
 }
 
 /*
@@ -78,15 +84,17 @@ body::-webkit-scrollbar {
 .card {
     background-color: white;
     opacity: 70%;
-    padding: 10px 10px;
+    padding: 20px;
+    margin: 10px auto;
     border-radius: 25px;
     transition: all 0.3s ease;
 }
 
 .card:hover {
-    background-color: #988ca1;
+    background-color: #303030;
     padding: 25px;
     cursor: pointer;
+    color: white;
 }
 
 /*
@@ -98,17 +106,23 @@ body::-webkit-scrollbar {
     opacity: 100%;
     height: auto;
     width: 60px;
-    padding: 2%;
-    background-color: #a45ceb;
+    padding: 10px;
+    background-color: rgb(178, 178, 178)!important;
     border-radius: 50px;
+    margin-bottom: 10px;
 }
 
 .cards .cardlist .card .text {
     opacity: 100%;
+    
 }
 
 .cards .cardlist .card .text p {
     font-size: 0.9rem;
+    padding: 2px;
+    margin: 5px auto;
+    text-align: left;
+    
 }
 
 /*
