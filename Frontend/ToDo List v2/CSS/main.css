@@ -9,14 +9,16 @@
 body {
     /* Set the background color to a gradient */
     /* #363532, rgb(88, 111, 112) */
-    align-items: center;
-    display: flex;
-    flex-direction: column;
     font-family: 'Poppins', sans-serif;
     min-height: 100vh;
     padding-top: 3%;
 }
 
+#app-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
 /* Set the properties for the standard, light, and darker themes */
 .standard {
     background-image: linear-gradient(100deg, #b459c7, blueviolet);
@@ -36,6 +38,32 @@ body {
     color: white;
     transition: 0.3s linear;
 }
+
+/*
+    The top section of the page consists of a button that is aligned to the right and has some margins.
+    The button has some padding and border radius, and its font is bold and sans-serif.
+    When the button is hovered over, its background color changes and the cursor turns to a pointer.
+    */
+    .top {
+        text-align: right;
+        margin-right: 1%;
+        padding-right:  2.5em;
+        padding-bottom: 2.0em;
+        color: #1a150ec0;
+    }
+    
+    .top button {
+        padding: 5px 20px;
+        border-radius: 13px;
+        border: 0px;
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+        background-color: #7397a3;
+    }
+    
+    .top button:hover {
+        box-shadow: rgba(245, 239, 239, 0.776) 0 0 10px;
+    }
 
 /* Set the properties for the header, form, and datetime elements */
 #header,
@@ -106,6 +134,10 @@ body {
     margin-top: 50px;
     margin-bottom: 20px;
     max-width: 480px;
+}
+
+.typed-cursor {
+    display: none;
 }
 
 .text {
