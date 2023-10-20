@@ -178,7 +178,8 @@ body::-webkit-scrollbar {
     justify-content: center;
     align-items: center;
     padding: 5% 10%;
-    background-color: #ab77d0;
+    background-color: #303030;
+    color: #fff !important;
 }
 
 .footer p {
