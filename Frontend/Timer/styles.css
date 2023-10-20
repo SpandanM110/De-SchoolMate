@@ -1,77 +1,77 @@
-/* This is the body of the document. */
+/* Body of the document */
 body {
     font-family: 'Play', sans-serif;
-    background: linear-gradient(90deg, #ab5ee3 0%, #9279a4 49%, #ab5ee3 100%);
-    /* The color of the text is #570c0c. */
-    /* color: #570c0c; */
+    background: linear-gradient(to right bottom, #080b51, #870057, #d13034, #e09100, #a8eb12) no-repeat;
+    height: 97vh;
+    /* Text color: #570c0c */
+    color: #570c0c;
 }
-/*
-    The top section of the page consists of a button that is aligned to the right and has some margins.
-    The button has some padding and border radius, and its font is bold and sans-serif.
-    When the button is hovered over, its background color changes and the cursor turns to a pointer.
-    */
-    .top {
-        text-align: right;
-        margin-top: 1%;
-        margin-right: 2%;
-    }
-    
-    .top button {
-        padding: 5px 20px;
-        border-radius: 13px;
-        border: 2px solid ;
-        font-family: "Poppins", sans-serif;
-        font-weight: bold;
-        background-color: #6a019a;
-    }
-    
-    .top button:hover {
-        background-color: #8216ee;
-        cursor: pointer;
-    }
 
-/* This is the container for the main content of the document. */
+/* Top section */
+.top {
+    text-align: right;
+    margin-top: 1%;
+    margin-right: 2%;
+}
+
+.top button {
+    border: 2px solid transparent;
+    /* Added transparent border color */
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    background-color: #303030;
+    border: 1px solid gray;
+    color: #fff !important;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.top button:hover {
+    background-color: gray;
+    cursor: pointer;
+}
+
+/* Main content container */
 .container {
     width: 80%;
     max-width: 500px;
     min-width: 250px;
     margin: 20px auto;
+    background: rgba(255, 255, 255, 0.85);
+    /* Reduced opacity */
+    padding: 2%;
+    border-radius: 5%;
+    border: 1px solid black;
 }
 
-/* This is the heading for the main content of the document. */
+/* Main content heading */
 h1 {
     margin-top: 10%;
     text-align: center;
     color: #6a019a;
 }
 
-/* This is a row of elements. */
+/* Row of elements */
 .row {
     overflow: hidden;
 }
 
-/* This is a half-width column. */
+/* Half-width column */
 .col-half {
     width: 50%;
     float: left;
 }
 
-/* This is a wrapper for a knob. */
+/* Knob wrapper */
 .knob-wrapper {
     text-align: center;
 }
 
-
-/* This is the style for buttons. */
-/* button styles */
-
-.buttons {
-    text-align: center;
-    margin-top: 15px;
-}
-
+/* Button styles */
+.buttons,
 .buttons-mute {
     text-align: center;
+    margin-top: 15px;
     margin-bottom: 15px;
 }
 
@@ -126,10 +126,7 @@ h1 {
     color: #5a4848;
 }
 
-
-/* This is the style for global overrides. */
-/* global override styles */
-
+/* Global overrides */
 .hidden {
     display: none;
 }
