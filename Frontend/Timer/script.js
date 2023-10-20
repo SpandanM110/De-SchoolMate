@@ -1,5 +1,5 @@
 function logout() {
-    window.open("../../index.html");
+    window.location.href = "../../index.html";
 }
 
 // this function runs when the document is loaded and ready

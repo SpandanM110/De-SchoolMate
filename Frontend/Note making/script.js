@@ -1,3 +1,7 @@
+function logout() {
+    window.location.href = "../../index.html";
+}
+
 // Get references to the relevant elements on the page
 const addBox = document.querySelector(".add-box"),
     popupBox = document.querySelector(".popup-box"),
@@ -33,9 +37,9 @@ closeIcon.addEventListener("click", () => {
 });
 
 // function to open index.html when home button is clicked
-function logout() {
-    window.open("../../index.html");
-}
+// function logout() {
+//     window.open("../../index.html");
+// }
 
 // Define a function to display all of the existing notes on the page
 function showNotes() {
@@ -119,3 +123,4 @@ addBtn.addEventListener("click", e => {
         closeIcon.click();
     }
 });
+

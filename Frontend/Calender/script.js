@@ -37,7 +37,7 @@ var weekdayShort = [
 ];
 
 function logout() {
-    window.open("../../index.html");
+    window.location.href = "../../index.html";
 }
 
 // Variable to keep track of the direction of the month change

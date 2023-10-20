@@ -40,7 +40,7 @@ savedTheme === null ?
 // Functions;
 
 function logout() {
-    window.open("../../index.html");
+    window.location.href = "../../index.html";
 }
 
 // Function to add a new to-do item
