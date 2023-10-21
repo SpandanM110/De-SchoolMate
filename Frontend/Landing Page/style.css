@@ -97,17 +97,33 @@ nav ul li a:hover {
 
 @media(max-width: 768px) {
   .mobile-menu-icon {
-    display: block;
+      display: block;
     cursor: pointer;
   }
 
   .bar {
+    background-color: #ffff;
     width: 25px;
     height: 3px;
     margin: 5px auto;
     transition: 0.4s;
   }
 
+                                                                .bar.mid {
+                                                                  opacity: 1;
+                                                                }
+                                
+                                                                .cross .bar:nth-child(1) {
+                                                                  transform: translateY(7.5px) rotate(45deg);
+                                                                }
+                                
+                                                                .cross .bar:nth-child(2) {
+                                                                  opacity: 0;
+                                                                }
+                                
+                                                                .cross .bar:nth-child(3) {
+                                                                  transform: translateY(-7.5px) rotate(-45deg);
+                                                                }
   .desktop-menu {
     display: none;
   }

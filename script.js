@@ -44,3 +44,8 @@ window.addEventListener('scroll', function () {
         });
     }
 });
+
+function toggleMenu() {
+    const menuIcon = document.querySelector('.mobile-menu-icon');
+    menuIcon.classList.toggle('cross');
+}
