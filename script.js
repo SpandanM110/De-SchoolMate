@@ -7,11 +7,15 @@ function login() {
 
 // Menu toggle in Mobile view
 const mobileMenuIcon = document.querySelector(".mobile-menu-icon");
+const icon = document.querySelector(".fa-solid");
 const menuLinks = document.querySelector(".menu-links");
 
 mobileMenuIcon.addEventListener("click", () => {
     menuLinks.classList.toggle("active");
     menuLinks.classList.toggle("menu-collapsed");
+
+    icon.classList.toggle("fa-x");
+    icon.classList.toggle("fa-bars");
 });
 
 // JavaScript in a script tag or external JS file
