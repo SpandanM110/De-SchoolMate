@@ -94,6 +94,9 @@ nav ul li a:hover {
 .mobile-menu-icon {
   display: none;
 }
+.mobile-menu-icon{
+  font-size: 32px;
+}
 
 @media(max-width: 768px) {
   .mobile-menu-icon {

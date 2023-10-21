@@ -38,7 +38,7 @@
   <!-- The body section contains the content of the website -->
 
   <body>
-    <!-- Header -->
+    <!-- Navbar -->
     <nav  >
       <p class="logo-text">De SchoolMate</p>
       <ul class="desktop-menu">
@@ -57,8 +57,8 @@
       <div class="mobile-menu-icon">
          <ion-icon onclick="onToggleMenu(this)" name="menu"></ion-icon>
       </div>
-  </nav>
-    <!-- End Header -->
+    </nav>
+    <!-- End Navbar -->
 
     <div class="land" id="home">
       <!-- This div contains the title and subtitle of the landing page -->
@@ -182,7 +182,7 @@
     <!-- script for navbar  -->
 
     <script>
-      const navLinks = document.querySelector('.desktop-menu')
+      const navLinks = document.querySelector('.menu-links')
       function onToggleMenu(e){
           e.name=e.name === 'menu'?'close':'menu';
           navLinks.classList.toggle('top-[0%]');
