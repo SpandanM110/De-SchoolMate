@@ -493,11 +493,9 @@ span {
   margin: 15% 0;
 }
 
-.features .lomghead span {
-  font-size: 1.3rem;
-  color: blueviolet;
+.features .lomghead span{
+  font-size: 1.57rem;
   opacity: 100% !important;
-
 }
 
 /* Styling for the description in the individual card in the features section */
@@ -555,14 +553,15 @@ span {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 5% 10%;
-  background-color: #ab77d0;
+  padding: 2% 10%;
+  background-image: linear-gradient(to top, #080b51, #870057, #d13034);
 }
 
 /* Styling for the text in the footer section */
 .footer p {
   font-size: 1.5rem;
   font-family: "Open Sans", sans-serif;
+  color:white
 }
 
 /* Media Query for very small screens */
@@ -597,7 +596,7 @@ span {
   }
 }
 .card:hover {
-  background-color: #b681df;
+  background-color:#e9d11ae9;
   padding: 45px;
   cursor: pointer;
 }

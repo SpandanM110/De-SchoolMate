@@ -91,7 +91,7 @@ body::-webkit-scrollbar {
 }
 
 .card:hover {
-    background-color: #303030;
+    background-color:white;
     padding: 25px;
     cursor: pointer;
     color: white;
