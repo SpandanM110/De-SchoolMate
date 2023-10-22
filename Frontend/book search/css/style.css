@@ -2,10 +2,9 @@
 
 /* This code sets the background color, height, and background image properties for the body section */
 body {
-  background-color: #D09AF7;
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, #080b51, #870057, #d13034, #e09100, #a8eb12);
   background-size: cover;
   }
 

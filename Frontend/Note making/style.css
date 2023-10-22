@@ -8,11 +8,15 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif; /* Set the default font family */
+    
 }
 
 /* Set the background color for the body */
 body {
-    background: #D09AF7;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, #080b51, #870057, #d13034, #e09100, #a8eb12);
+  background-size: cover;
 }
 
 /* Set the text color and background color for selected text */
