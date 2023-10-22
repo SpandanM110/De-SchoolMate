@@ -12,6 +12,7 @@ body {
     font-family: 'Poppins', sans-serif;
     min-height: 100vh;
     padding-top: 3%;
+    background-image: linear-gradient(to right bottom, #080b51, #870057, #d13034, #e09100, #a8eb12);
 }
 
 #app-container {
@@ -21,7 +22,7 @@ body {
 }
 /* Set the properties for the standard, light, and darker themes */
 .standard {
-    background-image: linear-gradient(100deg, #b459c7, blueviolet);
+    background-image: linear-gradient(to right bottom, #080b51, #870057, #d13034, #e09100, #a8eb12);
     color: #ffdfdb;
     transition: 0.3s linear;
     overflow: hidden;

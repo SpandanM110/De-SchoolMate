@@ -51,7 +51,7 @@
 /* Styling for the body */
 body{
     /* padding-bottom: 200px; */
-    background-color: #D09AF7;
+    background-image: linear-gradient(to right bottom, #080b51, #870057, #d13034, #e09100, #a8eb12);
 }
 
 /* Styling for the h1 element */
