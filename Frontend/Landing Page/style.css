@@ -551,17 +551,47 @@ span {
 /* Styling for the footer section */
 .footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 2% 10%;
   background-image: linear-gradient(to top, #080b51, #870057, #d13034);
+  align-content: center;
+}
+
+/* Styling for back-to-top button*/
+#myBtn {
+  border-radius: 50%;
+  outline: none;
+  border: 3px solid black;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  bottom: 20px;
+  position: fixed;
+  z-index: 99;
+  cursor: pointer;
+  padding: 10px;
+  margin-right: 0px;
+  margin-left: 5vw;
+  height: 70px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  transition: all 250ms;
+  right: 50px;
+  bottom: 30px;
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+  transform: scale(1.12);
 }
 
 /* Styling for the text in the footer section */
 .footer p {
   font-size: 1.5rem;
   font-family: "Open Sans", sans-serif;
-  color:white
+  color:white;
+  margin-left: 27vw;
 }
 
 /* Media Query for very small screens */
