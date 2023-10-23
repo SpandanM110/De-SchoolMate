@@ -29,13 +29,15 @@ body {
 }
 
 .light {
-    background-image: linear-gradient(100deg, #d4f1ff, #ffffff);
+    background-image: linear-gradient(100deg, #c8f6b7, #caebfc,#c5b6f2);
     color: #1a150e;
     transition: 0.3s linear;
 }
 
+
+
 .darker {
-    background-image: linear-gradient(100deg, #001214, #001f29);
+    background-image: linear-gradient(100deg, #062201,#02221e , #001f29, #180331,#1f011a);
     color: white;
     transition: 0.3s linear;
 }
