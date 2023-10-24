@@ -18,13 +18,6 @@
     <!-- This link tag loads an external CSS file that styles the landing page -->
     <link rel="stylesheet" href="./Frontend/Landing Page/style.css" />
     <link rel="stylesheet" href="./smoothscroll.css" />
-    <!-- Importing Bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
     <!-- This link tag sets the website's favicon -->
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
 
@@ -37,147 +30,173 @@
       referrerpolicy="no-referrer"
     />
   </head>
-
   <!-- The body section contains the content of the website -->
-
   <body>
-    <!-- Navbar start -->
-    <nav>
-      <p class="logo-text">De SchoolMate</p>
-      <ul class="desktop-menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#features">Features</a></li>
-        <li>
-          <a class="button-link" href="./Frontend/Feature Menu/index.html"
-            >Open App</a
-          >
-        </li>
-      </ul>
-      <ul class="menu-links menu-collapsed">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#features">Features</a></li>
-        <li>
-          <a class="button-link" href="./Frontend/Feature Menu/index.html"
-            >Open App</a
-          >
-        </li>
-      </ul>
-      <!-- Mobile Menu Icons -->
-      <div class="mobile-menu-icon">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-    </nav>
-    <!-- Navbar end -->
-
-    <div class="land" id="home">
+    <header class="header">
+      <a href="#">
+        <img
+          class="logo-header"
+          alt="DeSchoolMate logo"
+          src="./Images/img/logo-header.png"
+        />
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#hero">Home</a></li>
+          <li><a class="main-nav-link" href="#features">Features</a></li>
+          <li>
+            <a class="main-nav-link" href="#about">About</a>
+          </li>
+          <li>
+            <a
+              class="main-nav-link nav-cta"
+              href="https://github.com/SpandanM110/De-SchoolMate.git"
+              target="_blank"
+              >Contribute</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
       <!-- This div contains the title and subtitle of the landing page -->
-      <div class="title">
-        <h1>De <span style="color: #ffffff">SchoolMate</span></h1>
-        <h3>A complete solution for your daily studies</h3>
-      </div>
-    </div>
 
-    <!-- This section contains information about the website and its features -->
-    <div class="temp" id="about">
-      <div class="about">
-        <div class="text">
-          <h1><span>About</span> Us</h1>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">
+              Simplify your studies with <span class="name">De SchoolMate</span>
+            </h1>
+            <p class="paragraph">
+              Discover our all-in-one study solution! With amazing features
+              like, calendar, notes, and convenient access on any device, we've
+              got your daily studies covered. Boost your productivity and
+              achieve academic success with ease. Start today!
+            </p>
+            <a href="./Frontend/Feature Menu/index.html" class="btn btn--full"
+              >Explore our Apps</a
+            >
+          </div>
+          <div class="hero-img-box">
+            <img
+              class="hero-img"
+              src="./Images/img/Hero.png"
+              alt="Girl is reading with De SchoolMate"
+            />
+          </div>
         </div>
-        <!-- This div contains a description of the website and its features -->
+      </section>
 
-        <div class="description">
-          <div class="row">
-            <div class="col-lg-6 col-xl-6">
-              <img src="/Frontend/Media/Study.jpg" width="100%" height="100%" />
-            </div>
-            <div class="col-lg-6 col-xl-6">
-              <p>
-                Our website is a powerful productivity and organization tool
-                designed specifically for students. With a wide range of
-                features such as a Pomodoro timer, note making, todos list, and
-                more, our website is a one-stop-shop for students to manage
-                their daily activities and improve their productivity. Our
-                website is equipped with a variety of features such as a
-                calendar, goal-setting, and task prioritization tools, which
-                help students to plan their study schedule efficiently and
-                effectively. In addition, we offer a comprehensive library of
-                educational resources such as online courses, tutorial videos,
-                and study guides, which are designed to help students achieve
-                their academic goals and excel in their studies.
-              </p>
-            </div>
-          </div>
+      <!-- This section contains information about the website and its features -->
+      <section class="section-features">
+        <div class="feature-text">
+          <h2 class="heading-secondary">What We Offer?</h2>
+          <p class="description">
+            Discover our all-in-one study solution! With amazing features to
+            make your study ease and interesting.
+          </p>
         </div>
-      </div>
-      <!-- This div contains information about the website's features, including three cards with icons and descriptions -->
-      <div class="features" id="features">
-        <div class="heading">
-          <h1>Features</h1>
-        </div>
-        <div class="cards">
+        <div class="feature-cards">
           <div class="card">
-            <div class="lomgo">
-              <img src="./Frontend/Media/open-book.png" alt="" srcset="" />
-            </div>
-            <div class="lomghead">
-              <h3><span>Book</span> Search</h3>
-            </div>
-            <div class="lomgdisc">
-              <p style="text-align: justify">
-                A book search feature on a website is a tool that allows users
-                to search for books by various criteria such as title, author,
-                subject, or keyword.
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="lomgo">
-              <img src="./Frontend/Media/calendar.png" alt="" />
-            </div>
-            <div class="lomghead">
-              <h3>Calender</h3>
-            </div>
-            <div class="lomgdisc">
-              <p style="text-align: justify">
-                A calendar feature on a website is a tool that allows users to
-                view and organize events, tasks, and other appointments on a
-                digital calendar.
-              </p>
-            </div>
-          </div>
-          <div class="card">
-            <div class="lomgo">
+            <div class="feature-img-box">
               <img
-                src="./Frontend/Media/notes.png"
-                style="margin-left: 6px"
-                alt=""
-                srcset=""
+                class="notes-img"
+                src="./Images/img/notes.png"
+                alt="Notes 3D Image"
               />
             </div>
-            <div class="lomghead">
-              <h3>Note <span>Making</span></h3>
+
+            <h3 class="heading-tertiary">
+              Make digital <span class="heading-tertiary__style">Books</span>
+            </h3>
+            <p class="card-text">
+              A book search feature on a website is a tool that allows users to
+              search for books by various criteria such as title, author,
+              subject, or keyword.
+            </p>
+          </div>
+          <div class="card">
+            <div class="feature-img-box">
+              <img
+                class="notes-img"
+                src="./Images/img/calendar.png"
+                alt="Notes 3D Image"
+              />
             </div>
-            <div class="lomgdisc">
-              <p style="text-align: justify">
-                A note making feature on a website is a tool that allows users
-                to create and store short text-based notes or memos.
-              </p>
+            <h3 class="heading-tertiary">
+              Make digital <span class="heading-tertiary__style">Books</span>
+            </h3>
+            <p class="card-text">
+              A book search feature on a website is a tool that allows users to
+              search for books by various criteria such as title, author,
+              subject, or keyword.
+            </p>
+          </div>
+          <div class="card">
+            <div class="feature-img-box">
+              <img
+                class="notes-img"
+                src="./Images/img/book.png"
+                alt="Notes 3D Image"
+              />
             </div>
+            <h3 class="heading-tertiary">
+              Make digital <span class="heading-tertiary__style">Books</span>
+            </h3>
+            <p class="card-text">
+              A book search feature on a website is a tool that allows users to
+              search for books by various criteria such as title, author,
+              subject, or keyword.
+            </p>
           </div>
         </div>
-      </div>
-      <!-- This div contains the footer of the landing page -->
-      <div class="footer">
-        <p>
-          Copyright © De SchoolMate
-          <script>
-            document.write(new Date().getFullYear());
-          </script>
-        </p>
-      </div>
-    </div>
+      </section>
+
+      <section class="section-about">
+        <div class="about-img-box">
+          <img
+            class="about-img"
+            src="./Images/img/about.png"
+            alt="Image of handshake between two people"
+          />
+        </div>
+        <div class="about-text-box">
+          <h2 class="heading-secondary">Who We Are?</h2>
+          <p class="about-description">
+            Our website is a productivity and organization tool for students. It
+            has features like Pomodoro timer, note making, todos list, calendar,
+            goal-setting, and task prioritization tools. We also offer a library
+            of educational resources like online courses, tutorial videos, and
+            study guides to help students excel in their studies.
+          </p>
+          <a
+            href="https://github.com/SpandanM110/De-SchoolMate.git"
+            class="btn btn--about"
+            >Let’s Contribute</a
+          >
+        </div>
+      </section>
+    </main>
+    <!-- This div contains the footer of the landing page -->
+    <footer class="footer">
+      <a href="#">
+        <img
+          class="logo-bottom"
+          alt="DeSchoolMate logo"
+          src="./Images/img/logo-bottom.png"
+        />
+      </a>
+      <p class="copyright">
+        ©
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        De SchoolMate. All rights reserved.
+      </p>
+      <a href="https://github.com/SpandanM110/De-SchoolMate.git"
+        ><img src="./Images/img/github.svg" alt="Github Repository Link"
+      /></a>
+    </footer>
 
     <!-- This script tag loads an external JavaScript file that contains a function to open the app -->
     <script src="./script.js"></script>
