@@ -5,7 +5,8 @@
 body {
   font-family: "Montserrat", sans-serif;
   font-family: "Playfair Display", serif;
-  background-image: linear-gradient(to right bottom, #080b51, #870057, #d13034, #e09100, #a8eb12);
+  background-size: cover;
+  background-image: linear-gradient(to bottom, #080b51, #870057, #d13034, #e09100);
   background-repeat: no-repeat;
   background-attachment: fixed;
 }

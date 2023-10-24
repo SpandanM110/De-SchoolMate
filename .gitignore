@@ -1,0 +1,17 @@
+# Ignore Node.js modules
+node_modules/
+
+# Ignore macOS system files
+.DS_Store
+public/.DS_Store
+
+# Ignore log files and temp files
+*.log
+*.tmp
+
+# Visual Studio Code settings
+.vscode/settings.json
+
+# Ignore all files in .vscode except launch.json
+.vscode/*
+!.vscode/launch.json
