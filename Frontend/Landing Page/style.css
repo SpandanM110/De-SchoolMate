@@ -54,8 +54,23 @@ nav {
 nav ul {
   display: flex;
   list-style: none;
-  align-items: center;
+    align-items: center;
   color: #fff;
+}
+
+@media (min-width: 769px) {
+  /* .desktop-menu {
+    width: 433.06px;
+    height: 28.8px;
+  } */
+  .desktop-menu a {
+    display: inline-block;
+    width: 138.48px !important;
+    height: 44px !important;
+  }
+  .menu-links {
+    display: none !important;
+  }
 }
 
 nav ul li a {
@@ -63,17 +78,20 @@ nav ul li a {
   padding: 10px;
   font-family: 'Montserrat';
   color: #fff;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
 }
 
-
-.button-link {
+.button-link span{
+  font-size: inherit;
   background-color: #303030;
+  padding: 5px 10px ;
+  margin: 0;
   color: #fff !important;
-  padding: 10px 20px;
+  text-align: center;
   border-radius: 20px;
   text-decoration: none;
 }
-
 
 nav ul li a:hover {
   color: #f8f3f3 !important;
