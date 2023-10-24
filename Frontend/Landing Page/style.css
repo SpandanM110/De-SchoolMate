@@ -6,6 +6,8 @@ body {
   font-family: "Montserrat", sans-serif;
   font-family: "Playfair Display", serif;
   background-image: linear-gradient(to right bottom, #080b51, #870057, #d13034, #e09100, #a8eb12);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 /* Setting default margin and padding to 0 */
@@ -75,7 +77,7 @@ nav ul li a {
 nav ul li a:hover {
   color: #f8f3f3 !important;
   font-size: larger;
- 
+
 }
 
 .toggle-menu {
@@ -100,7 +102,7 @@ nav ul li a:hover {
     display: block;
     cursor: pointer;
   }
-  
+
   .mobile-menu-icon i {
     color: white;
     font-size: 1.5rem;
@@ -177,10 +179,6 @@ button:hover {
   align-items: center;
   background: url(../Media/unsplash_EaFX0kRvXT8.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(/De-SchoolMate/Images/pexels-kobe-1516440.jpg);
-  object-fit: cover;
-  background-image: linear-gradient(to right bottom, #080b51, #870057, #d13034, #e09100, #a8eb12);
   min-height: 100vh;
   width: 100%;
 }
@@ -336,9 +334,6 @@ span {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to right bottom, #080b51, #870057, #d13034, #e09100, #a8eb12);
-  background-image: linear-gradient(to left top, #080b51, #870057, #d13034, #e09100, #a8eb12);
-
   padding-top: 10%;
   padding-left: 20%;
   padding-right: 20%;
@@ -354,24 +349,27 @@ span {
 }
 
 /* Styling for the description in the about section */
-.about{
+.about {
   padding-left: 10%;
   padding-right: 10%;
 }
-.about h1{
+
+.about h1 {
   color: #970c50 !important;
 }
-.about span{
+
+.about span {
   font-size: 3rem;
   color: white;
 }
 
-.description .row{
+.description .row {
   padding-top: 5%;
   width: 100%;
   height: 100%;
 }
-.about .description img{
+
+.about .description img {
 
   border-top: solid black 5px;
   border-left: solid black 5px;
@@ -380,6 +378,7 @@ span {
   border-radius: 10%;
 
 }
+
 .about .description p {
   font-size: 1.2rem;
   margin-bottom: 10%;
@@ -435,7 +434,6 @@ span {
   justify-content: center;
   align-items: center;
   text-align: justify;
-  background-image: linear-gradient(to right bottom, #080b51, #870057, #d13034, #e09100, #a8eb12);
   padding-top: 10%;
   padding-left: 20%;
   padding-right: 20%;
@@ -471,7 +469,6 @@ span {
 /* Styling for the logo container in the individual card in the features section */
 .features .card .lomgo {
   background-image: linear-gradient(to bottom, #080b51, #870057, #d13034, #e09100);
-
   border-radius: 50px;
   border-top: solid 5px white;
   border-left: solid 5px white;
@@ -493,7 +490,7 @@ span {
   margin: 15% 0;
 }
 
-.features .lomghead span{
+.features .lomghead span {
   font-size: 1.57rem;
   opacity: 100% !important;
 }
@@ -551,11 +548,8 @@ span {
 /* Styling for the footer section */
 .footer {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2% 10%;
-  background-image: linear-gradient(to top, #080b51, #870057, #d13034);
-  align-content: center;
+  padding: 2% 6%;
+  background-color: black;
 }
 
 /* Styling for back-to-top button*/
@@ -563,8 +557,7 @@ span {
   border-radius: 50%;
   outline: none;
   border: 3px solid black;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-  bottom: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
   position: fixed;
   z-index: 99;
   cursor: pointer;
@@ -582,7 +575,7 @@ span {
 }
 
 #myBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
+  background-color: #555;
   transform: scale(1.12);
 }
 
@@ -590,27 +583,26 @@ span {
 .footer p {
   font-size: 1.5rem;
   font-family: "Open Sans", sans-serif;
-  color:white;
-  /* margin-left: 27vw; */
+  color: white;
+  justify-content: left;
 }
 
 /* Media Query for very small screens */
 @media screen and (max-width: 500px) {
-
-  /* Decreasing the font size of the text in the footer section */
+  .footer {
+    padding: 4% 4%;
+  }
   .footer p {
-    font-size: 1.2rem;
+    font-size: 3vh;
+  }
+  .order-md-1 {
+    order: 1;
+  }
+  .order-md-2 {
+    order: 2;
   }
 }
 
-/* Media Query for extremely small screens */
-@media screen and (max-width: 400px) {
-
-  /* Decreasing the font size of the text in the footer section */
-  .footer p {
-    font-size: 1rem;
-  }
-}
 
 /* Media Query for narrow screens */
 @media screen and (max-width: 330px) {
@@ -625,8 +617,9 @@ span {
     font-size: 0.7rem;
   }
 }
+
 .card:hover {
-  background-color:#e9d11ae9;
+  background-color: #e9d11ae9;
   padding: 45px;
   cursor: pointer;
 }
@@ -635,7 +628,8 @@ span {
   position: relative;
   padding: 0;
   margin: 0;
-  text-align: center; /* Center the icons horizontally */
+  text-align: center;
+  /* Center the icons horizontally */
 }
 
 .social-icon li {
@@ -648,9 +642,12 @@ span {
   color: #ffee00;
   text-decoration: none;
   transition: all 0.4s ease-in-out;
-  size: 500px; /* This line is not needed */
-  font-size: 2em; /* Adjust the icon size as needed */
-  margin: 10px; /* Adjust the margin as needed */
+  size: 500px;
+  /* This line is not needed */
+  font-size: 2em;
+  /* Adjust the icon size as needed */
+  margin: 10px;
+  /* Adjust the margin as needed */
 }
 
 .social-icon li a:hover {
@@ -662,91 +659,111 @@ span {
   width: 100%;
   height: 100%;
 }
+
 .box-contents {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background: url(/Frontend/Media/Study.jpg) 50% 50% / cover no-repeat;
+  background-size: cover;
+  background-image: url(/De-SchoolMate/Images/pexels-kobe-1516440.jpg);
+  object-fit: cover;
   box-shadow: 0 0 50px rgba(0, 0, 0, .3);
   transition: .5s ease;
   border-radius: 25px;
 }
+
 .hover-point {
   position: absolute;
   z-index: 2;
   width: calc(100% / 3);
   height: calc(100% / 3);
 }
+
 .hover-point:nth-child(1) {
   top: 0;
   left: 0;
 }
+
 .hover-point:nth-child(2) {
   top: 0;
   left: calc(100% / 3);
 }
+
 .hover-point:nth-child(3) {
   top: 0;
   right: 0;
 }
+
 .hover-point:nth-child(4) {
   top: calc(100% / 3);
   left: 0;
 }
+
 .hover-point:nth-child(5) {
   top: calc(100% / 3);
   right: 0;
 }
+
 .hover-point:nth-child(6) {
   bottom: 0;
   left: 0;
 }
+
 .hover-point:nth-child(7) {
   bottom: 0;
   left: calc(100% / 3);
 }
+
 .hover-point:nth-child(8) {
   bottom: 0;
   right: 0;
 }
-.hover-point:nth-child(1):hover ~ .box-contents {
+
+.hover-point:nth-child(1):hover~.box-contents {
   box-shadow: 15px 15px 50px rgba(0, 0, 0, .3);
   transform-origin: right top;
   transform: perspective(1000px) rotateX(10deg) rotateY(-10deg) rotateZ(2deg);
 }
-.hover-point:nth-child(2):hover ~ .box-contents {
+
+.hover-point:nth-child(2):hover~.box-contents {
   box-shadow: 0 15px 50px rgba(0, 0, 0, .3);
   transform-origin: center top;
   transform: perspective(1000px) rotateX(10deg);
 }
-.hover-point:nth-child(3):hover ~ .box-contents {
+
+.hover-point:nth-child(3):hover~.box-contents {
   box-shadow: -15px 15px 50px rgba(0, 0, 0, .3);
   transform-origin: left top;
   transform: perspective(1000px) rotateX(10deg) rotateY(10deg) rotateZ(-2deg);
 }
-.hover-point:nth-child(4):hover ~ .box-contents {
+
+.hover-point:nth-child(4):hover~.box-contents {
   box-shadow: 15px 5px 50px rgba(0, 0, 0, .3);
   transform-origin: left center;
   transform: perspective(1000px) rotateY(-10deg);
 }
-.hover-point:nth-child(5):hover ~ .box-contents {
+
+.hover-point:nth-child(5):hover~.box-contents {
   box-shadow: -15px 5px 50px rgba(0, 0, 0, .3);
   transform-origin: right center;
   transform: perspective(1000px) rotateY(10deg);
 }
-.hover-point:nth-child(6):hover ~ .box-contents {
+
+.hover-point:nth-child(6):hover~.box-contents {
   box-shadow: 15px -15px 50px rgba(0, 0, 0, .3);
   transform-origin: right bottom;
   transform: perspective(1000px) rotateX(-10deg) rotateY(-10deg) rotateZ(-2deg);
 }
-.hover-point:nth-child(7):hover ~ .box-contents {
+
+.hover-point:nth-child(7):hover~.box-contents {
   box-shadow: 0 -15px 50px rgba(0, 0, 0, .3);
   transform-origin: center bottom;
   transform: perspective(1000px) rotateX(-10deg);
 }
-.hover-point:nth-child(8):hover ~ .box-contents {
+
+.hover-point:nth-child(8):hover~.box-contents {
   box-shadow: -15px -15px 50px rgba(0, 0, 0, .3);
   transform-origin: left bottom;
   transform: perspective(1000px) rotateX(-10deg) rotateY(10deg) rotateZ(2deg);
