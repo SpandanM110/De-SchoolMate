@@ -194,15 +194,7 @@ body::-webkit-scrollbar {
 /* SECTION ABOUT  */
 /**************************/
 
-.section-about {
-  background-color: #f3f0ff;
-  font-family: "Poppins", sans-serif;
-  padding: 8rem 8rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 16rem;
-  align-items: center;
-}
+
 .about-img {
   width: 100%;
 }
@@ -223,16 +215,7 @@ body::-webkit-scrollbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2.4rem 8rem;
-  background-color: #212529;
-}
 
-/* Styling for the text in the footer section */
-.copyright {
-  font-size: 1.6rem;
-  font-family: "Poppins", sans-serif;
-  color: #fff;
-}
 .logo-bottom {
   height: 8rem;
 }

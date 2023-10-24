@@ -12,6 +12,7 @@ body {
     font-family: 'Poppins', sans-serif;
     min-height: 100vh;
     padding-top: 3%;
+    background-image: linear-gradient(to right bottom, #080b51, #870057, #d13034, #e09100, #a8eb12);
 }
 
 #app-container {
@@ -21,20 +22,22 @@ body {
 }
 /* Set the properties for the standard, light, and darker themes */
 .standard {
-    background-image: linear-gradient(100deg, #b459c7, blueviolet);
+    background-image: linear-gradient(to right bottom, #080b51, #870057, #d13034, #e09100, #a8eb12);
     color: #ffdfdb;
     transition: 0.3s linear;
     overflow: hidden;
 }
 
 .light {
-    background-image: linear-gradient(100deg, #d4f1ff, #ffffff);
+    background-image: linear-gradient(100deg, #c8f6b7, #caebfc,#c5b6f2);
     color: #1a150e;
     transition: 0.3s linear;
 }
 
+
+
 .darker {
-    background-image: linear-gradient(100deg, #001214, #001f29);
+    background-image: linear-gradient(100deg, #062201,#02221e , #001f29, #180331,#1f011a);
     color: white;
     transition: 0.3s linear;
 }
@@ -114,15 +117,15 @@ body {
 
 /* Set the properties for each theme's button */
 .standard-theme {
-    background-image: linear-gradient(100deg, #b459c7, blueviolet);
+    background-image: linear-gradient(100deg,  #080b51, #870057, #d13034, #e09100);
 }
 
 .light-theme {
-    background-image: linear-gradient(100deg, #d4f1ff, #ffffff);
+    background-image: linear-gradient(100deg, #b4eba0, #b4daee);
 }
 
 .darker-theme {
-    background-image: linear-gradient(100deg, #001214, #001f29);
+    background-image: linear-gradient(100deg, #083e38 , #103f4f, #34155c);
 }
 
 /* Set the properties for the title animation */

@@ -1,8 +1,8 @@
 /* Body of the document */
 body {
     font-family: 'Play', sans-serif;
-    background: linear-gradient(to right bottom, #080b51, #870057, #d13034, #e09100, #a8eb12) no-repeat;
-    height: 97vh;
+    background-image: linear-gradient(to right bottom, #080b51, #870057, #d13034, #e09100, #a8eb12);
+    background-size: cover;
     /* Text color: #570c0c */
     color: #570c0c;
 }
@@ -34,14 +34,22 @@ body {
 /* Main content container */
 .container {
     width: 80%;
-    max-width: 500px;
+    max-width: 400px;
     min-width: 250px;
-    margin: 20px auto;
+    margin: auto;
     background: rgba(255, 255, 255, 0.85);
     /* Reduced opacity */
-    padding: 2%;
+    padding: 1%;
     border-radius: 5%;
     border: 1px solid black;
+}
+
+.new {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to right bottom, #080b51, #870057, #d13034, #e09100, #a8eb12);
+    background-size: cover;
+    padding-bottom: 50px;
 }
 
 /* Main content heading */
