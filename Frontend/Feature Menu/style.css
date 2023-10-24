@@ -50,7 +50,7 @@ body::-webkit-scrollbar {
 }
 
 .top button:hover {
-    background-color: #8216ee;
+    background-color: #28c086;
     cursor: pointer;
     transform: scale(1.1);
 }
@@ -91,7 +91,7 @@ body::-webkit-scrollbar {
 }
 
 .card:hover {
-    background-color:white;
+    background-color:rgb(119 157 126);
     padding: 25px;
     cursor: pointer;
     color: white;

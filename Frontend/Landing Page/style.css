@@ -194,11 +194,39 @@ button:hover {
 }
 
 /* Styling for the main title in the landing section */
+
 .land .title h1,
 span {
   opacity: 80%;
-  font-size: 5rem;
+  font-size: 8rem;
+
+  /* -webkit-text-stroke:0.3vw #5a01b3; */
 }
+/* .title>h1>span{
+  -webkit-text-stroke:0.3vw #5a01b3;
+} */
+.land .title h1,span{
+  /* position: absolute; */
+  /* top: 0;
+  left: 0; */
+  width: 0;
+  height: 100%;
+  color:#a8eb12;
+  -webkit-text-stroke: 0vw #5a01b3;
+  border-right: 3px solid #e09100;
+  overflow: hidden;
+  animation: animate 6s linear infinite;
+}
+
+@keyframes animate {
+  0%,10%,100%{
+    width: 0;
+  }
+  70%,90%{
+    width:100%
+  }
+}
+
 
 /* Styling for the subtitle in the landing section */
 .land .title h3 {
