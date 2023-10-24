@@ -58,7 +58,7 @@ nav ul {
   color: #fff;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 851px) {
   /* .desktop-menu {
     width: 433.06px;
     height: 28.8px;
@@ -116,7 +116,7 @@ nav ul li a:hover {
   display: none;
 }
 
-@media(max-width: 768px) {
+@media(max-width: 851px) {
   .mobile-menu-icon {
     display: block;
     cursor: pointer;
@@ -248,7 +248,7 @@ span {
 
 }
 
-@media(max-width: 768px) {
+@media(max-width: 851px) {
 
   .land.title h1,
   span {
