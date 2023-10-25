@@ -91,10 +91,9 @@ body::-webkit-scrollbar {
 }
 
 .card:hover {
-    background-color:white;
+    background-color: #ffee00;
     padding: 25px;
     cursor: pointer;
-    color: white;
 }
 
 /*
