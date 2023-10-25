@@ -15,3 +15,10 @@ Design - Figma
 Development - HTML, CSS, JavaScript
 
 Deployed on - Vercel
+
+# Contributors
+<a href="https://github.com/SpandanM110/De-SchoolMate/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=SpandanM110/De-SchoolMate" />
+</a>
+
+Made with [contrib.rocks](https://contrib.rocks).
