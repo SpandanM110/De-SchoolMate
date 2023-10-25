@@ -343,7 +343,6 @@ span {
 
 /* Styling for the title in the about section */
 .about .text h1 {
-  color: #000000;
   font-size: 3rem;
   margin-bottom: 10%;
   font-family: "Open Sans", sans-serif;
@@ -355,13 +354,8 @@ span {
   padding-right: 10%;
 }
 
-.about h1 {
-  color: #970c50 !important;
-}
-
-.about span {
-  font-size: 3rem;
-  color: white;
+h1{
+  color: white !important;
 }
 
 .description .row {
@@ -456,6 +450,7 @@ span {
   align-items: center;
   text-align: center;
   background-color: #d9d9d9;
+  transition: transform .2s;
   opacity: 80%;
   border-radius: 25px;
   padding: 5% 5%;
@@ -576,7 +571,7 @@ span {
 }
 
 #myBtn:hover {
-  background-color: #555;
+  background-color: yellow;
   transform: scale(1.12);
 }
 
@@ -621,7 +616,7 @@ span {
 
 .card:hover {
   background-color: #e9d11ae9;
-  padding: 45px;
+  transform: scale(1.1);
   cursor: pointer;
 }
 
@@ -668,7 +663,7 @@ span {
   bottom: 0;
   left: 0;
   background-size: cover;
-  background-image: url(/De-SchoolMate/Images/pexels-kobe-1516440.jpg);
+  background-image: url(/De-SchoolMate/Images/img/about.png);
   object-fit: cover;
   box-shadow: 0 0 50px rgba(0, 0, 0, .3);
   transition: .5s ease;
