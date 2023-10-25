@@ -1,58 +1,72 @@
-/*
-The following CSS code contains styling for a page layout consisting of cards and a footer.
-*/
-
-/*
-All elements on the page have no padding or margin by default.
-*/
 * {
     padding: 0;
     margin: 0;
 }
 
-/*
-    The scrollbar is hidden on the page.
-    */
+/*The scrollbar is hidden on the page.*/
 body::-webkit-scrollbar {
     display: none;
 }
 
-/*
-    The background color of the body is set to a light purple.
-    */
-.body {
-    /* background-color: #d09af7; */
-    background-image: linear-gradient(to right bottom, #080b51, #870057, #d13034, #e09100, #a8eb12);
+body {
+    background-size: cover;
+    background-image: linear-gradient(to right, #080b51, #870057, #d13034, #e09100);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
-/*
-    The top section of the page consists of a button that is aligned to the right and has some margins.
-    The button has some padding and border radius, and its font is bold and sans-serif.
-    When the button is hovered over, its background color changes and the cursor turns to a pointer.
-    */
-.top {
-    float: right;
-    margin-top: 1%;
-    margin-right: 1%;
+/* Navbar start */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 24px;
+    height: 70px;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    box-shadow: 1px 1px 1px 0 #969595;
+    background-color: black;
+    z-index: 99;
 }
 
+.logo-text {
+    cursor: pointer;
+    font-size: 32px;
+    color: white;
+}
 
-.top button {
+nav button {
     background-color: #303030;
     color: #fff !important;
-    padding: 10px 40px;
-    border-radius: 20px; 
+    padding: 5px 20px;
     font-family: "Poppins", sans-serif;
     text-decoration: none;
     outline: none;
+    border-radius: 20px;
     border: none;
     font-size: 18px;
 }
 
-.top button:hover {
+nav button:hover {
     background-color: #8216ee;
     cursor: pointer;
     transform: scale(1.1);
+}
+
+
+@media screen and (max-width: 580px) {
+
+    .logo-text {
+        font-size: 20px;
+    }
+
+    nav button {
+        background-color: #303030;
+        color: #fff !important;
+        padding: 5px 20px;
+        font-size: 12px;
+    }
+    
 }
 
 /*
@@ -63,9 +77,9 @@ body::-webkit-scrollbar {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    margin: 0 15%;
+    padding: 5%;
+    border-radius: 20px;
+    margin: 10px;
     gap: 30px;
 }
 
@@ -106,14 +120,14 @@ body::-webkit-scrollbar {
     height: auto;
     width: 60px;
     padding: 10px;
-    background-color: rgb(178, 178, 178)!important;
+    background-color: rgb(178, 178, 178) !important;
     border-radius: 50px;
     margin-bottom: 10px;
 }
 
 .cards .cardlist .card .text {
     opacity: 100%;
-    
+
 }
 
 .cards .cardlist .card .text p {
@@ -121,7 +135,7 @@ body::-webkit-scrollbar {
     padding: 2px;
     margin: 5px auto;
     text-align: left;
-    
+
 }
 
 /*
@@ -168,36 +182,67 @@ body::-webkit-scrollbar {
     }
 }
 
-/*
-    The footer section of the page is displayed as a row with centered items, and has some padding and a background color of purple.
-    The paragraph tag within the footer section has a font size of 1.5rem.
-    */
 .footer {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5% 10%;
-    /* background-color: #303030; */
-    background-image: linear-gradient(to top, #080b51, #870057, #d13034);
-    color: #fff !important;
+    padding: 2% 6%;
+    background-color: black;
 }
 
+
+/* Styling for the text in the footer section */
 .footer p {
     font-size: 1.5rem;
     font-family: "Open Sans", sans-serif;
+    color: white;
+    justify-content: left;
 }
 
-/*
-    Media queries are used to adjust the font size of the paragraph tag within the footer section for smaller screens.
-    */
+/* Media Query for very small screens */
 @media screen and (max-width: 500px) {
+    .footer {
+        padding: 4% 4%;
+    }
+
     .footer p {
-        font-size: 1.2rem;
+        font-size: 3vh;
+    }
+
+    .order-md-1 {
+        order: 1;
+    }
+
+    .order-md-2 {
+        order: 2;
     }
 }
 
-@media screen and (max-width: 400px) {
-    .footer p {
-        font-size: 1rem;
-    }
+
+.social-icon {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    /* Center the icons horizontally */
+}
+
+.social-icon li {
+    display: inline-block;
+    list-style: none;
+}
+
+.social-icon li a {
+    border-radius: 50%;
+    color: #ffee00;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+    size: 500px;
+    /* This line is not needed */
+    font-size: 2em;
+    /* Adjust the icon size as needed */
+    margin: 10px;
+    /* Adjust the margin as needed */
+}
+
+.social-icon li a:hover {
+    color: rgb(255, 0, 170);
 }
