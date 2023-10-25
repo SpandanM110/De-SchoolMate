@@ -16,6 +16,11 @@ Development - HTML, CSS, JavaScript
 
 Deployed on - Vercel
 
+# Project Admins
+1. <a href="https://github.com/SpandanM110/">Spandan Mukherjee</a>
+2. <a href="https://github.com/ojasaklechayt">Ojas Aklecha</a>
+3. <a href="https://github.com/srummanf">Shaikh Rumman Fardeen</a>
+
 # Contributors
 <a href="https://github.com/SpandanM110/De-SchoolMate/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=SpandanM110/De-SchoolMate" />
