@@ -98,7 +98,7 @@ nav ul li a:hover {
   display: none;
 }
 
-@media(max-width: 768px) {
+@media screen and (max-width: 768px) {
   .mobile-menu-icon {
     display: block;
     cursor: pointer;
@@ -149,28 +149,7 @@ nav ul li a:hover {
 
 /* Navbar end */
 
-.navbar button {
-  /* background-color: #000000; */
-  border: none;
-  color: #000000;
-  padding: 0.5rem 1.25rem;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 0.3rem 0.15rem;
-  cursor: pointer;
-  border-radius: 1.25rem;
-  font-family: 'Gill Sans MT' sans-serif;
-  font-weight: bold;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  margin-bottom: 20px;
-  font-size: 22px;
-}
 
-button:hover {
-  background-color: powderblue;
-  color: black;
-}
 
 /* Styling for the landing section */
 .land {
@@ -354,7 +333,7 @@ span {
   padding-right: 10%;
 }
 
-h1{
+h1 {
   color: white !important;
 }
 
@@ -429,10 +408,6 @@ h1{
   justify-content: center;
   align-items: center;
   text-align: justify;
-  padding-top: 10%;
-  padding-left: 20%;
-  padding-right: 20%;
-  padding-bottom: 10%;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -440,7 +415,6 @@ h1{
 .features .cards {
   display: flex;
   flex-direction: row;
-  gap: 35px;
 }
 
 /* Styling for the individual card in the features section */
@@ -453,13 +427,7 @@ h1{
   transition: transform .2s;
   opacity: 80%;
   border-radius: 25px;
-  padding: 5% 5%;
-}
-
-/* Styling for the logo in the individual card in the features section */
-.features .card .lomgo img {
-  height: auto;
-  width: 50px;
+  padding: 2% 3%;
 }
 
 /* Styling for the logo container in the individual card in the features section */
@@ -471,52 +439,26 @@ h1{
   border-right: solid 5px black;
   border-bottom: solid 5px black;
   padding: 5% 5%;
-  margin-top: 15%;
+  margin-top: 10%;
 }
 
 /* Styling for the heading in the features section */
 .features .heading h1 {
-  color: white;
   margin-bottom: 15%;
   font-size: 3rem;
 }
 
 /* Styling for the heading in the individual card in the features section */
-.features .card .lomghead h3 {
-  margin: 15% 0;
-}
-
-.features .lomghead span {
-  font-size: 1.57rem;
-  opacity: 100% !important;
+.features .card .lomghead {
+  margin: 5% 0;
 }
 
 /* Styling for the description in the individual card in the features section */
-.features .card .lomgdisc p {
+.features .card .lomgdisc {
   margin-bottom: 10%;
 }
 
 /* Media Query for smaller screens */
-@media screen and (max-width: 1000px) {
-
-  /* Decreasing the font size of the description in the individual card in the features section */
-  .features .card .lomgdisc p {
-    font-size: 0.7rem;
-  }
-
-  /* Decreasing the font size of the heading in the individual card in the features section */
-  .features .card .lomghead h3 {
-    font-size: 0.9rem;
-  }
-
-  /* Decreasing the size of the logo in the individual card in the features section */
-  .features .card .lomgo img {
-    height: auto;
-    width: 30px;
-  }
-}
-
-/* Media Query for even smaller screens */
 @media screen and (max-width: 800px) {
 
   /* Changing the flex direction of the cards in the features section */
@@ -524,22 +466,29 @@ h1{
     flex-direction: column;
   }
 
+  .order-md-1 {
+    order: 1;
+  }
+
+  .order-md-2 {
+    order: 2;
+  }
+
+  .order-md-3 {
+    order: 3;
+  }
+
   /* Decreasing the font size of the description in the individual card in the features section */
-  .features .card .lomgdisc p {
-    font-size: 0.9rem;
+  .features .card .lomgdisc {
+    font-size: 1.6vh;
   }
 
   /* Decreasing the font size of the heading in the individual card in the features section */
-  .features .card .lomghead h3 {
-    font-size: 1rem;
-  }
-
-  /* Decreasing the size of the logo in the individual card in the features section */
-  .features .card .lomgo img {
-    height: auto;
-    width: 30px;
+  .features .card .lomghead {
+    font-size: 2ch;
   }
 }
+
 
 /* Styling for the footer section */
 .footer {
@@ -588,12 +537,15 @@ h1{
   .footer {
     padding: 4% 4%;
   }
+
   .footer p {
     font-size: 3vh;
   }
+
   .order-md-1 {
     order: 1;
   }
+
   .order-md-2 {
     order: 2;
   }
@@ -647,7 +599,7 @@ h1{
 }
 
 .social-icon li a:hover {
-  color: #9000ff;
+  color: rgb(255, 0, 170);
 }
 
 .box {

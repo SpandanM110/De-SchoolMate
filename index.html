@@ -4,7 +4,9 @@
     page](poe://www.poe.com/_api/key_phrase?phrase=landing%20page&prompt=Tell%20me%20more%20about%20landing%20page.) for
     a website called De SchoolMate -->
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="en">
+
+<head>
   <!-- The head section contains metadata about the page, including its character encoding, viewport settings, and title -->
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -26,8 +28,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+ </head>
 
 
 
@@ -111,86 +112,90 @@
         </div>
       </div>
     </div>
-    <!-- This div contains information about the website's features, including three cards with icons and descriptions -->
-    <div class="features" id="features">
+  </div>
+
+
+  <!-- This div contains information about the website's features, including three cards with icons and descriptions -->
+  <div class="container" id="features">
+
+    <div class="features mb-5 mt-4">
       <div class="heading">
         <h1>Features</h1>
       </div>
       <div class="cards">
-        <div class="card">
+        <div class="m-3 card">
           <div class="lomgo">
-            <img src="./Frontend/Media/open-book.png" alt="" srcset="" />
+            <img style="width: 40px; height: 40px;" src="./Frontend/Media/open-book.png" alt="" />
           </div>
-          <div class="lomghead">
-            <h3>Book Search</h3>
-          </div>
-          <div class="lomgdisc">
-            <p>
-              A book search feature on a website is a tool that allows users
-              to search for books by various criteria such as title, author,
-              subject, or keyword.
-            </p>
-          </div>
+          <h3 class="lomghead">Book Search</h3>
+          <p class="lomgdisc">
+            A book search feature on a website is a tool that allows users
+            to search for books by various criteria such as title, author,
+            subject, or keyword.
+          </p>
         </div>
-        <div class="card">
-          <div class="lomgo">
-            <img src="./Frontend/Media/calendar.png" alt="" />
-          </div>
-          <div class="lomghead">
-            <h3>Calender</h3>
-          </div>
-          <div class="lomgdisc">
-            <p">
-              A calendar feature on a website is a tool that allows users to
-              view and organize events, tasks, and other appointments on a
-              digital calendar.
-              </p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="lomgo">
-            <img src="./Frontend/Media/notes.png" style="margin-left: 6px" alt="" srcset="" />
-          </div>
-          <div class="lomghead">
-            <h3>Note Making</h3>
-          </div>
-          <div class="lomgdisc">
-            <p>
-              A note making feature on a website is a tool that allows users
-              to create and store short text-based notes or memos.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- This div contains the footer of the landing page -->
-    <div class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8 order-md-1 text-center"> <!-- This will appear on the left on larger screens -->
-            <p>
-              Copyright © De SchoolMate
-              <script>
-                document.write(new Date().getFullYear());
-              </script>
-            </p>
-          </div>
-          <div class="col-md-4 order-md-2 text-center"> <!-- This will appear on the right on larger screens -->
-            <ul class="social-icon">
-              <li><a href="https://de-school-mate-tau.vercel.app/" class="fa fa-linkedin fa-2x"></a></li>
-              <li><a href="https://de-school-mate-tau.vercel.app/" class="fa fa-github fa-2x"></a></li>
-              <li><a href="https://de-school-mate-tau.vercel.app/" class="fa fa-instagram fa-2x"></a></li>
-              <li><a href="https://de-school-mate-tau.vercel.app/" class="fa fa-facebook fa-2x"></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <button onclick="topFunction()" id="myBtn" class="btn btn-primary"><i class="fa-solid fa-arrow-up fa-beat fa-2xl"
-          style="color: #000000;"></i></button>
-    </div>
 
+        <div class="m-3 card">
+          <div class="lomgo">
+            <img style="width: 40px; height: 40px;" src="./Frontend/Media/calendar.png" alt="" />
+          </div>
+          <h3 class="lomghead">Calendar</h3>
+          <p class="lomgdisc">
+            A calendar feature on a website is a tool that allows users to
+            view and organize events, tasks, and other appointments on a
+            digital calendar.
+          </p>
+
+        </div>
+
+        <div class="m-3 card">
+          <div class="lomgo">
+            <img style="width: 40px; height: 40px;" src="./Frontend/Media/notes.png" style="margin-left: 6px" alt="" />
+          </div>
+          <h3 class="lomghead">Note Making</h3>
+          <p class="lomgdisc">
+            A note-making feature on a website is a tool that allows users
+            to create and store short text-based notes or memos.
+          </p>
+        </div>
+      </div>
+    </div>
 
   </div>
+
+  <br>
+  <br>
+
+
+
+  <!-- This div contains the footer of the landing page -->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 order-md-1 text-center"> <!-- This will appear on the left on larger screens -->
+          <p>
+            Copyright © De SchoolMate
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+          </p>
+        </div>
+        <div class="col-md-4 order-md-2 text-center"> <!-- This will appear on the right on larger screens -->
+          <ul class="social-icon">
+            <li><a href="https://de-school-mate-tau.vercel.app/" class="fa fa-linkedin fa-2x"></a></li>
+            <li><a href="https://de-school-mate-tau.vercel.app/" class="fa fa-github fa-2x"></a></li>
+            <li><a href="https://de-school-mate-tau.vercel.app/" class="fa fa-instagram fa-2x"></a></li>
+            <li><a href="https://de-school-mate-tau.vercel.app/" class="fa fa-facebook fa-2x"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <button onclick="topFunction()" id="myBtn" class="btn btn-primary"><i class="fa-solid fa-arrow-up fa-beat fa-2xl"
+        style="color: #000000;"></i></button>
+  </div>
+
+
+
 
   <!-- This script tag loads an external JavaScript file that contains a function to open the app -->
   <script src="./script.js"></script>
