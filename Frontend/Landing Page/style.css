@@ -717,3 +717,12 @@ h1 {
   background-color: #060606e9;
   border-radius: 5px;
 }
+
+a.logo-text {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo-text:hover {
+  color: #510808;
+}

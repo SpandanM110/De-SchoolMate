@@ -31,102 +31,30 @@
     <div class="top"><button onclick="logout()">Home</button></div>
     <div class="content-wrapper">
         
-        <!-- This is the heading section of the web page -->
-        <div class="heading"><h1>Calender</h1></div>
-        
-        <!-- This is the left wrapper section of the web page -->
-        <div class="left-wrapper">
-            
-            <!-- This is the header section of the left wrapper, which contains the month and year navigation buttons -->
-            <div class="header"><i class="fa fa-angle-left" aria-hidden="true"></i><span><span class="month">
-                    </span><span class="year"></span></span><i class="fa fa-angle-right" aria-hidden="true"></i></div>
-            
-            <!-- This is the calender section of the left wrapper, which displays the calender table -->
-            <div class="calender">
-                <table>
-                    <thead>
-                        <!-- This is the week days section of the calender table, which displays the names of the days -->
-                        <tr class="weekdays">
-                            <th data-weekday="sun" data-column="0">Sun</th>
-                            <th data-weekday="mon" data-column="1">Mon</th>
-                            <th data-weekday="tue" data-column="2">Tue</th>
-                            <th data-weekday="wed" data-column="3">Wed</th>
-                            <th data-weekday="thu" data-column="4">Thu</th>
-                            <th data-weekday="fri" data-column="5">Fri</th>
-                            <th data-weekday="sat" data-column="6">Sat</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- This is the days section of the calender table, which displays the dates of the month -->
-                        <tr class="days" data-row="0">
-                            <td data-column="0"></td>
-                            <td data-column="1"></td>
-                            <td data-column="2"></td>
-                            <td data-column="3"></td>
-                            <td data-column="4"></td>
-                            <td data-column="5"></td>
-                            <td data-column="6"></td>
-                        </tr>
-                        <tr class="days" data-row="1">
-                            <td data-column="0"></td>
-                            <td data-column="1"></td>
-                            <td data-column="2"></td>
-                            <td data-column="3"></td>
-                            <td data-column="4"></td>
-                            <td data-column="5"></td>
-                            <td data-column="6"></td>
-                        </tr>
-                        <tr class="days" data-row="2">
-                            <td data-column="0"></td>
-                            <td data-column="1"></td>
-                            <td data-column="2"></td>
-                            <td data-column="3"></td>
-                            <td data-column="4"></td>
-                            <td data-column="5"></td>
-                            <td data-column="6"></td>
-                        </tr>
-                        <tr class="days" data-row="3">
-                            <td data-column="0"></td>
-                            <td data-column="1"></td>
-                            <td data-column="2"></td>
-                            <td data-column="3"></td>
-                            <td data-column="4"></td>
-                            <td data-column="5"></td>
-                            <td data-column="6"></td>
-                        </tr>
-                        <tr class="days" data-row="4">
-                            <td data-column="0"></td>
-                            <td data-column="1"></td>
-                            <td data-column="2"></td>
-                            <td data-column="3"></td>
-                            <td data-column="4"></td>
-                            <td data-column="5"></td>
-                            <td data-column="6"></td>
-                        </tr>
-                        <tr class="days" data-row="5">
-                            <td data-column="0"></td>
-                            <td data-column="1"></td>
-                            <td data-column="2"></td>
-                            <td data-column="3"></td>
-                            <td data-column="4"></td>
-                            <td data-column="5"></td>
-                            <td data-column="6"></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            
-            <!-- This is the show date section of the left wrapper, which displays the current date -->
-            <div class="showDate"><i class="fa fa-angle-double-right" aria-hidden="true"></i></div>
-        </div>
-        
-        <!-- This is the right wrapper section of the web page -->
-        <div class="right-wrapper">
-            
-            <!-- This is the header section of the right wrapper, which displays the selected date -->
-            <div class="header"><span></span></div><span class="day"></span><span class="month"></span>
-        </div>
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Monthly Calendar</title>
+    <style>
+       
+    </style>
+</head>
+<body>
+    <h1>Calender</h1>
+    <div class="calendar" id="calendar">
+        <div class="day">Sun</div>
+        <div class="day">Mon</div>
+        <div class="day">Tue</div>
+        <div class="day">Wed</div>
+        <div class="day">Thu</div>
+        <div class="day">Fri</div>
+        <div class="day">Sat</div>
     </div>
+</body>
+</html>
+
     
     <!-- This is the JavaScript code for the web page -->
     <script src="script.js"></script>
