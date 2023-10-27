@@ -6,7 +6,13 @@ body {
   font-family: "Montserrat", sans-serif;
   font-family: "Playfair Display", serif;
   background-size: cover;
-  background-image: linear-gradient(to bottom, #080b51, #870057, #d13034, #e09100);
+  background-image: linear-gradient(
+    to bottom,
+    #080b51,
+    #870057,
+    #d13034,
+    #e09100
+  );
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -61,10 +67,9 @@ nav ul {
 nav ul li a {
   text-decoration: none !important;
   padding: 10px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   color: #fff;
 }
-
 
 .button-link {
   background-color: #303030;
@@ -74,11 +79,9 @@ nav ul li a {
   text-decoration: none;
 }
 
-
 nav ul li a:hover {
   color: #f8f3f3 !important;
   font-size: larger;
-
 }
 
 .toggle-menu {
@@ -149,8 +152,6 @@ nav ul li a:hover {
 
 /* Navbar end */
 
-
-
 /* Styling for the landing section */
 .land {
   display: flex;
@@ -206,11 +207,9 @@ span {
   font-size: 1.5rem;
   font-weight: 480;
   margin-top: 2rem;
-
 }
 
-@media(max-width: 768px) {
-
+@media (max-width: 768px) {
   .land.title h1,
   span {
     font-size: 2.4rem;
@@ -249,23 +248,19 @@ span {
 }
 
 .funcs {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   margin-bottom: 10px;
-
 }
-
 
 #l1 {
   margin-right: 10px;
   /* border-radius: 1.25rem; */
-
 }
 
 #l2 {
   margin-right: 10px;
   /* border-radius: 1.25rem; */
 }
-
 
 .navbar a {
   /* box-shadow: inset 0 0 0 0 #ffffff; */
@@ -295,7 +290,6 @@ span {
   .navwap {
     gap: 40vh;
   }
-
 
   /* Styling for the main title in the landing section on smaller screens */
   .land .title h1 {
@@ -344,13 +338,11 @@ h1 {
 }
 
 .about .description img {
-
   border-top: solid black 5px;
   border-left: solid black 5px;
   border-right: solid white 5px;
   border-bottom: solid white 5px;
   border-radius: 10%;
-
 }
 
 .about .description p {
@@ -365,7 +357,6 @@ h1 {
 
 /* Media Query for smaller screens */
 @media screen and (max-width: 580px) {
-
   /* Decreasing the font size of the title in the about section */
   .about .text h1 {
     font-size: 2.2rem;
@@ -379,7 +370,6 @@ h1 {
 
 /* Media Query for even smaller screens */
 @media screen and (max-width: 580px) {
-
   /* Decreasing the font size of the title in the about section */
   .about .text h1 {
     font-size: 2.1rem;
@@ -424,7 +414,7 @@ h1 {
   align-items: center;
   text-align: center;
   background-color: #d9d9d9;
-  transition: transform .2s;
+  transition: transform 0.2s;
   opacity: 80%;
   border-radius: 25px;
   padding: 2% 3%;
@@ -432,7 +422,13 @@ h1 {
 
 /* Styling for the logo container in the individual card in the features section */
 .features .card .lomgo {
-  background-image: linear-gradient(to bottom, #080b51, #870057, #d13034, #e09100);
+  background-image: linear-gradient(
+    to bottom,
+    #080b51,
+    #870057,
+    #d13034,
+    #e09100
+  );
   border-radius: 50px;
   border-top: solid 5px white;
   border-left: solid 5px white;
@@ -460,7 +456,6 @@ h1 {
 
 /* Media Query for smaller screens */
 @media screen and (max-width: 800px) {
-
   /* Changing the flex direction of the cards in the features section */
   .features .cards {
     flex-direction: column;
@@ -489,7 +484,6 @@ h1 {
   }
 }
 
-
 /* Styling for the footer section */
 .footer {
   display: flex;
@@ -502,7 +496,8 @@ h1 {
   border-radius: 50%;
   outline: none;
   border: 3px solid black;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
   position: fixed;
   z-index: 99;
   cursor: pointer;
@@ -551,10 +546,8 @@ h1 {
   }
 }
 
-
 /* Media Query for narrow screens */
 @media screen and (max-width: 330px) {
-
   /* Decreasing the font size of the heading in the about section */
   .about .text h1 {
     font-size: 2rem;
@@ -617,8 +610,8 @@ h1 {
   background-size: cover;
   background-image: url(/De-SchoolMate/Images/img/about.png);
   object-fit: cover;
-  box-shadow: 0 0 50px rgba(0, 0, 0, .3);
-  transition: .5s ease;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+  transition: 0.5s ease;
   border-radius: 25px;
 }
 
@@ -669,50 +662,67 @@ h1 {
   right: 0;
 }
 
-.hover-point:nth-child(1):hover~.box-contents {
-  box-shadow: 15px 15px 50px rgba(0, 0, 0, .3);
+.hover-point:nth-child(1):hover ~ .box-contents {
+  box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.3);
   transform-origin: right top;
   transform: perspective(1000px) rotateX(10deg) rotateY(-10deg) rotateZ(2deg);
 }
 
-.hover-point:nth-child(2):hover~.box-contents {
-  box-shadow: 0 15px 50px rgba(0, 0, 0, .3);
+.hover-point:nth-child(2):hover ~ .box-contents {
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3);
   transform-origin: center top;
   transform: perspective(1000px) rotateX(10deg);
 }
 
-.hover-point:nth-child(3):hover~.box-contents {
-  box-shadow: -15px 15px 50px rgba(0, 0, 0, .3);
+.hover-point:nth-child(3):hover ~ .box-contents {
+  box-shadow: -15px 15px 50px rgba(0, 0, 0, 0.3);
   transform-origin: left top;
   transform: perspective(1000px) rotateX(10deg) rotateY(10deg) rotateZ(-2deg);
 }
 
-.hover-point:nth-child(4):hover~.box-contents {
-  box-shadow: 15px 5px 50px rgba(0, 0, 0, .3);
+.hover-point:nth-child(4):hover ~ .box-contents {
+  box-shadow: 15px 5px 50px rgba(0, 0, 0, 0.3);
   transform-origin: left center;
   transform: perspective(1000px) rotateY(-10deg);
 }
 
-.hover-point:nth-child(5):hover~.box-contents {
-  box-shadow: -15px 5px 50px rgba(0, 0, 0, .3);
+.hover-point:nth-child(5):hover ~ .box-contents {
+  box-shadow: -15px 5px 50px rgba(0, 0, 0, 0.3);
   transform-origin: right center;
   transform: perspective(1000px) rotateY(10deg);
 }
 
-.hover-point:nth-child(6):hover~.box-contents {
-  box-shadow: 15px -15px 50px rgba(0, 0, 0, .3);
+.hover-point:nth-child(6):hover ~ .box-contents {
+  box-shadow: 15px -15px 50px rgba(0, 0, 0, 0.3);
   transform-origin: right bottom;
   transform: perspective(1000px) rotateX(-10deg) rotateY(-10deg) rotateZ(-2deg);
 }
 
-.hover-point:nth-child(7):hover~.box-contents {
-  box-shadow: 0 -15px 50px rgba(0, 0, 0, .3);
+.hover-point:nth-child(7):hover ~ .box-contents {
+  box-shadow: 0 -15px 50px rgba(0, 0, 0, 0.3);
   transform-origin: center bottom;
   transform: perspective(1000px) rotateX(-10deg);
 }
 
-.hover-point:nth-child(8):hover~.box-contents {
-  box-shadow: -15px -15px 50px rgba(0, 0, 0, .3);
+.hover-point:nth-child(8):hover ~ .box-contents {
+  box-shadow: -15px -15px 50px rgba(0, 0, 0, 0.3);
   transform-origin: left bottom;
   transform: perspective(1000px) rotateX(-10deg) rotateY(10deg) rotateZ(2deg);
+}
+.app-button {
+  width: 85px;
+  height: 40px;
+  text-decoration: solid;
+  color: #e0dddd;
+  background-color: #060606e9;
+  border-radius: 5px;
+}
+
+a.logo-text {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo-text:hover {
+  color: #510808;
 }
