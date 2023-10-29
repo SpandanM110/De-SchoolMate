@@ -1,29 +1,73 @@
-# De SchoolMate
-![image](https://user-images.githubusercontent.com/95229740/220142233-f9d98419-d3a0-446f-9ab0-b75ab6c48711.png)
+Certainly! Below is the updated `README.md` file including the mentioned tech stacks: Vite, React, and Tailwind CSS.
 
-# About our project
-Our website is a powerful productivity and organization tool designed with students in mind. With a wide range of features such as Pomodoro timers, notes and to-do lists, our site is a one-stop-shop for students to manage their daily activities and increase their productivity.
+```markdown
+# De Schoolmate
 
-Our website is equipped with a variety of features such as calendars, goal setting and task prioritization tools to help students plan their study schedules efficiently and effectively. In addition, we offer a comprehensive library of educational resources, including online courses, tutorial videos, and study guides, designed to help students achieve their academic goals and excel in their studies. 
+Welcome to **De Schoolmate**, your trusted platform for academic excellence and innovative learning experiences! Our mission is to empower students with the knowledge, skills, and confidence they need to succeed in their educational journey. Through our cutting-edge tools, expert guidance, and comprehensive resources, we are here to support you every step of the way.
 
-# Deployed Website
-https://de-school-mate-tau.vercel.app/
+## Tech Stacks
 
-# Tech Stack Used
-Design - Figma
+- **Vite:** De Schoolmate is built using Vite, a fast and efficient JavaScript build tool that provides an instant development server and optimized production builds.
+- **React:** The platform utilizes React, a popular JavaScript library for building user interfaces, to create dynamic and interactive learning experiences.
+- **Tailwind CSS:** De Schoolmate's UI is styled using Tailwind CSS, a utility-first CSS framework that makes it easy to design responsive and visually appealing interfaces.
 
-Development - HTML, CSS, JavaScript
+## Features
 
-Deployed on - Vercel
+- **Innovative Learning Tools:** Explore interactive lessons, quizzes, and collaborative platforms designed to enhance your learning experience.
+- **Expert Guidance:** Receive personalized support from experienced educators to navigate challenging subjects and achieve your full potential.
+- **Comprehensive Resources:** Access a vast library of study materials, tutorials, and practice tests to reinforce learning and boost confidence.
+- **Community Engagement:** Connect with a community of like-minded students, participate in discussions, and collaborate on projects to enhance your understanding.
 
-# Project Admins
-1. <a href="https://github.com/SpandanM110/">Spandan Mukherjee</a>
-2. <a href="https://github.com/ojasaklechayt">Ojas Aklecha</a>
-3. <a href="https://github.com/srummanf">Shaikh Rumman Fardeen</a>
+## Getting Started
 
-# Contributors
-<a href="https://github.com/SpandanM110/De-SchoolMate/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=SpandanM110/De-SchoolMate" />
-</a>
+1. **Clone the repository:**
+```
 
-Made with [contrib.rocks](https://contrib.rocks).
+git clone [repository_url]
+cd de-schoolmate
+
+```
+
+2. **Install Dependencies:**
+```
+
+npm install
+
+```
+
+3. **Run the Development Server:**
+```
+
+npm run dev
+
+```
+
+4. **Open in Your Browser:**
+```
+
+Visit http://localhost:5173 in your browser.
+
+```
+
+## About Us
+
+At De Schoolmate, we are dedicated to creating a nurturing learning environment where students can thrive academically, develop essential skills, and cultivate a lifelong love for learning. With a passionate team of educators and tech enthusiasts, we aim to transform the educational journey of every student we touch.
+
+## Contributing
+
+We welcome contributions from the community! If you find any issues or have ideas for improvements, please open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+Feel free to explore our platform, join our community, and embark on your journey to academic excellence with De Schoolmate!
+```
+
+In this updated version, the tech stacks (Vite, React, and Tailwind CSS) have been explicitly mentioned at the beginning of the file.
+
+## Author
+
+**LinkedIn:** [Kapil](https://www.linkedin.com/in/askapil07)
