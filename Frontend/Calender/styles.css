@@ -13,6 +13,7 @@ html {
     position: relative;
     outline: none;
     perspective: 1000px; /* Set 3D perspective for the page */
+    margin: 0;
 }
 
 /* The top section of the page consists of a button that is aligned to the right and has some margins.
@@ -21,8 +22,7 @@ When the button is hovered over, its background color changes and the cursor tur
 */ 
 .top {
     text-align: right;
-    margin-top: 1%;
-    margin-right: 2%;
+    margin: 1rem;
 }
 
 .top button {

@@ -5,13 +5,13 @@ body {
     background-size: cover;
     /* Text color: #570c0c */
     color: #570c0c;
+    margin: 0;
 }
 
 /* Top section */
 .top {
     text-align: right;
-    margin-top: 1%;
-    margin-right: 2%;
+    margin: 1rem;
 }
 
 .top button {
@@ -34,22 +34,25 @@ body {
 /* Main content container */
 .container {
     width: 80%;
-    max-width: 400px;
-    min-width: 250px;
+    max-width: 30rem;
+    min-width: 25rem;
     margin: auto;
     background: rgba(255, 255, 255, 0.85);
     /* Reduced opacity */
-    padding: 1%;
-    border-radius: 5%;
+    padding: 1rem;
+    border-radius: 2rem;
     border: 1px solid black;
 }
 
 .new {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background-image: linear-gradient(to right bottom, #080b51, #870057, #d13034, #e09100, #a8eb12);
     background-size: cover;
     padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Main content heading */
