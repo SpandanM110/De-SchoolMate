@@ -1,6 +1,3 @@
-Certainly! Below is the updated `README.md` file including the mentioned tech stacks: Vite, React, and Tailwind CSS.
-
-```markdown
 # De Schoolmate
 
 Welcome to **De Schoolmate**, your trusted platform for academic excellence and innovative learning experiences! Our mission is to empower students with the knowledge, skills, and confidence they need to succeed in their educational journey. Through our cutting-edge tools, expert guidance, and comprehensive resources, we are here to support you every step of the way.
@@ -21,6 +18,7 @@ Welcome to **De Schoolmate**, your trusted platform for academic excellence and 
 ## Getting Started
 
 1. **Clone the repository:**
+
 ```
 
 git clone [repository_url]
@@ -29,6 +27,7 @@ cd de-schoolmate
 ```
 
 2. **Install Dependencies:**
+
 ```
 
 npm install
@@ -36,6 +35,7 @@ npm install
 ```
 
 3. **Run the Development Server:**
+
 ```
 
 npm run dev
@@ -43,6 +43,7 @@ npm run dev
 ```
 
 4. **Open in Your Browser:**
+
 ```
 
 Visit http://localhost:5173 in your browser.
@@ -60,11 +61,6 @@ We welcome contributions from the community! If you find any issues or have idea
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-
----
-
-Feel free to explore our platform, join our community, and embark on your journey to academic excellence with De Schoolmate!
-```
 
 In this updated version, the tech stacks (Vite, React, and Tailwind CSS) have been explicitly mentioned at the beginning of the file.
 
