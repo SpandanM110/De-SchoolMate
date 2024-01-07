@@ -6,6 +6,31 @@
 
 ## Contributing to De School Mate
 
+# Method 1
+
+
+## Prefer Github Desktop As well if you are comfortable
+
+**1)** Install Github Desktop
+
+**2)** Initialize Github ID
+
+**3)** Copy the Repo Link
+
+**4)** Clone It
+
+**5)** Make changes and commit it with message.
+
+**6)** Open Website Version of Github and click on commits and create a new PR and then write details.
+
+**7)** Provide Screenshot of the changes initial and final preview if needed to clarify your contribution.
+
+**8)** The Project Admin will view and will merge it.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Method 2
+
 **1.** Fork the repository.
 
 **2.** Clone your forked copy of the project into your local system.
