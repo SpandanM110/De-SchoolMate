@@ -10,8 +10,7 @@ body {
 /* Top section */
 .top {
     text-align: right;
-    margin-top: 1%;
-    margin-right: 2%;
+    padding: 1% 2%;
 }
 
 .top button {
@@ -45,7 +44,7 @@ body {
 }
 
 .new {
-    width: 100vw;
+    max-width: 100%;
     height: 100vh;
     background-image: linear-gradient(to right bottom, #080b51, #870057, #d13034, #e09100, #a8eb12);
     background-size: cover;

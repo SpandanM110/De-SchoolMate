@@ -6,52 +6,51 @@ body {
   height: 100vh;
   background-image: linear-gradient(to right bottom, #080b51, #870057, #d13034, #e09100, #a8eb12);
   background-size: cover;
-  }
+}
 
-  /*
+/*
     The top section of the page consists of a button that is aligned to the right and has some margins.
     The button has some padding and border radius, and its font is bold and sans-serif.
     When the button is hovered over, its background color changes and the cursor turns to a pointer.
     */
-    .top {
-      text-align: right;
-      margin-top: 1%;
-      margin-right: 2%;
-  }
-  
-  .top button {
-      padding: 5px 20px;
-      border-radius: 13px;
-      border: 2px solid ;
-      font-family: "Poppins", sans-serif;
-      font-weight: bold;
-      background-color: #b143e4;
-  }
-  
-  .top button:hover {
-      background-color: #8216ee;
-      cursor: pointer;
-  }
+.top {
+  text-align: right;
+  padding: 1% 2%;
+}
 
-  /* This code centers the page content vertically */
-  .center {
+.top button {
+  padding: 5px 20px;
+  border-radius: 13px;
+  border: 2px solid;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  background-color: #b143e4;
+}
+
+.top button:hover {
+  background-color: #8216ee;
+  cursor: pointer;
+}
+
+/* This code centers the page content vertically */
+.center {
   margin: auto;
   margin-top: 200px;
-  }
-  
-  /* This code sets the font family and font size for the header */
-  #header {
+}
+
+/* This code sets the font family and font size for the header */
+#header {
   font-family: 'Righteous', sans-serif;
   font-size: 3rem;
-  }
-  
-  /* This code sets the font family for all h2 tags */
-  h2 {
+}
+
+/* This code sets the font family for all h2 tags */
+h2 {
   font-family: 'Righteous', sans-serif;
-  }
-  
-  /* This code sets the margin top and visibility properties for the book search result list */
-  .book-list {
+}
+
+/* This code sets the margin top and visibility properties for the book search result list */
+.book-list {
   margin-top: 50px;
   visibility: hidden;
-  }
+}
