@@ -7,16 +7,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif; /* Set the default font family */
-    
+    font-family: 'Poppins', sans-serif;
+    /* Set the default font family */
+
 }
 
 /* Set the background color for the body */
 body {
-  width: 100vw;
-  height: 100vh;
-  background-image: linear-gradient(to right bottom, #080b51, #870057, #d13034, #e09100, #a8eb12);
-  background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to right bottom, #080b51, #870057, #d13034, #e09100, #a8eb12);
+    background-size: cover;
 }
 
 /* Set the text color and background color for selected text */
@@ -30,32 +31,32 @@ body {
     The button has some padding and border radius, and its font is bold and sans-serif.
     When the button is hovered over, its background color changes and the cursor turns to a pointer.
     */
-    .top {
-        text-align: right;
-        margin-top: 1%;
-        margin-right: 1%;
-    }
-    
-    .top button {
-        padding: 5px 20px;
-        border-radius: 13px;
-        border: 2px solid;
-        font-family: "Poppins", sans-serif;
-        font-weight: bold;
-        background-color: #a45ceb;
-    }
-    
-    .top button:hover {
-        background-color: #8216ee;
-        cursor: pointer;
-    }
+.top {
+    text-align: right;
+    padding: 1%;
+}
+
+.top button {
+    padding: 5px 20px;
+    border-radius: 13px;
+    border: 2px solid;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    background-color: #a45ceb;
+}
+
+.top button:hover {
+    background-color: #8216ee;
+    cursor: pointer;
+}
 
 /* Set styles for the note wrapper */
 .wrapper {
     margin: 50px;
     display: grid;
     gap: 25px;
-    grid-template-columns: repeat(auto-fill, 265px); /* Set the grid layout */
+    grid-template-columns: repeat(auto-fill, 265px);
+    /* Set the grid layout */
 }
 
 .wrapper li {
@@ -63,8 +64,10 @@ body {
     list-style: none;
     border-radius: 5px;
     padding: 15px 20px 20px;
-    background: #fff; /* Set the background color for each note */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Add a box-shadow effect to create a depth illusion */
+    background: #fff;
+    /* Set the background color for each note */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    /* Add a box-shadow effect to create a depth illusion */
 }
 
 /* Set styles for elements inside the note */
@@ -93,7 +96,8 @@ header,
     font-size: 40px;
     border-radius: 50%;
     justify-content: center;
-    border: 2px dashed #a44ae4; /* Add a dashed border to the plus icon */
+    border: 2px dashed #a44ae4;
+    /* Add a dashed border to the plus icon */
 }
 
 .add-box p {
@@ -111,29 +115,36 @@ header,
 
 .note .details {
     max-height: 165px;
-    overflow-y: auto; /* Add a scrollbar to the note if the content exceeds the height */
+    overflow-y: auto;
+    /* Add a scrollbar to the note if the content exceeds the height */
 }
 
 .note .details::-webkit-scrollbar,
 .popup textarea::-webkit-scrollbar {
-    width: 0; /* Hide the scrollbar in WebKit browsers */
+    width: 0;
+    /* Hide the scrollbar in WebKit browsers */
 }
 
 .note .details:hover::-webkit-scrollbar,
 .popup textarea:hover::-webkit-scrollbar {
-    width: 5px; /* Show the scrollbar on hover */
+    width: 5px;
+    /* Show the scrollbar on hover */
 }
 
 .note .details:hover::-webkit-scrollbar-track,
 .popup textarea:hover::-webkit-scrollbar-track {
-    background: #f1f1f1; /* Set the background color for the scrollbar track */
-    border-radius: 25px; /* Add a border radius to the scrollbar track */
+    background: #f1f1f1;
+    /* Set the background color for the scrollbar track */
+    border-radius: 25px;
+    /* Add a border radius to the scrollbar track */
 }
 
 .note .details:hover::-webkit-scrollbar-thumb,
 .popup textarea:hover::-webkit-scrollbar-thumb {
-    background: #e6e6e6; /* Set the background color for the scrollbar thumb */
-    border-radius: 25px; /* Add a border radius to the scrollbar thumb */
+    background: #e6e6e6;
+    /* Set the background color for the scrollbar thumb */
+    border-radius: 25px;
+    /* Add a border radius to the scrollbar thumb */
 }
 
 .note p {
@@ -150,7 +161,8 @@ header,
 
 .note .bottom-content {
     padding-top: 10px;
-    border-top: 1px solid #ccc; /* Add a top border to the bottom content */
+    border-top: 1px solid #ccc;
+    /* Add a top border to the bottom content */
 }
 
 .bottom-content span {
@@ -177,14 +189,16 @@ header,
     background: #fff;
     position: absolute;
     border-radius: 4px;
-    transform: scale(0); /* Set the initial scale to 0 to hide the menu */
+    transform: scale(0);
+    /* Set the initial scale to 0 to hide the menu */
     transform-origin: bottom right;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
     transition: transform 0.2s ease;
 }
 
 .settings.show .menu {
-    transform: scale(1); /* Show the menu on hover */
+    transform: scale(1);
+    /* Show the menu on hover */
 }
 
 .settings .menu li {
@@ -203,7 +217,8 @@ header,
 }
 
 .menu li:hover {
-    background: #f5f5f5; /* Set the background color on hover */
+    background: #f5f5f5;
+    /* Set the background color on hover */
 }
 
 .menu li i {
@@ -218,7 +233,8 @@ header,
     z-index: 2;
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.4); /* Set a semi-transparent black background */
+    background: rgba(0, 0, 0, 0.4);
+    /* Set a semi-transparent black background */
 }
 
 .popup-box .popup {
@@ -229,14 +245,16 @@ header,
     width: 100%;
     max-width: 400px;
     justify-content: center;
-    transform: translate(-50%, -50%) scale(0.95); /* Set the initial scale to 0.95 and center the box */
+    transform: translate(-50%, -50%) scale(0.95);
+    /* Set the initial scale to 0.95 and center the box */
 }
 
 .popup-box,
 .popup {
     opacity: 0;
     pointer-events: none;
-    transition: all 0.25s ease; /* Add a transition effect */
+    transition: all 0.25s ease;
+    /* Add a transition effect */
 }
 
 .popup-box.show,
@@ -246,7 +264,8 @@ header,
 }
 
 .popup-box.show .popup {
-    transform: translate(-50%, -50%) scale(1); /* Scale up the box on show */
+    transform: translate(-50%, -50%) scale(1);
+    /* Scale up the box on show */
 }
 
 .popup .content {
