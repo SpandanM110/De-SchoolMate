@@ -615,7 +615,7 @@ h1 {
   bottom: 0;
   left: 0;
   background-size: cover;
-  background-image: url(/De-SchoolMate/Images/img/about.png);
+  background-image: url(/Frontend/Media/Study.jpg);
   object-fit: cover;
   box-shadow: 0 0 50px rgba(0, 0, 0, .3);
   transition: .5s ease;
