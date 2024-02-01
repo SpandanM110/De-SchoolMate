@@ -12,13 +12,14 @@ html {
     overflow: hidden;
     position: relative;
     outline: none;
-    perspective: 1000px; /* Set 3D perspective for the page */
+    perspective: 1000px;
+    /* Set 3D perspective for the page */
 }
 
 /* The top section of the page consists of a button that is aligned to the right and has some margins.
 The button has some padding and border radius, and its font is bold and sans-serif.
 When the button is hovered over, its background color changes and the cursor turns to a pointer.
-*/ 
+*/
 .top {
     text-align: right;
     margin-top: 1%;
@@ -28,7 +29,7 @@ When the button is hovered over, its background color changes and the cursor tur
 .top button {
     padding: 5px 20px;
     border-radius: 13px;
-    border: 2px solid ;
+    border: 2px solid;
     font-family: "Poppins", sans-serif;
     font-weight: bold;
     background-color: #ad12f5;
@@ -46,10 +47,12 @@ When the button is hovered over, its background color changes and the cursor tur
     height: 420px;
     top: 40%;
     left: 50%;
+    /* color: #acacac; */
     box-sizing: border-box;
     transform: translate(-50%, -50%);
     transition: all 0.195s ease;
-    transform-style: preserve-3d; /* Set 3D perspective for the container */
+    transform-style: preserve-3d;
+    /* Set 3D perspective for the container */
 }
 
 /* Set styles for rotating the calendar to the left */
@@ -66,6 +69,7 @@ When the button is hovered over, its background color changes and the cursor tur
 .content-wrapper .left-wrapper,
 .content-wrapper .right-wrapper {
     background-color: white;
+    color: #acacac;
     width: 50%;
     float: left;
     height: 100%;
